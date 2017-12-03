@@ -1,0 +1,175 @@
+ul.head-category li {
+    display: inline;
+    padding-right: 20px;
+    position: relative;
+    padding-left: 0px;
+}
+
+li>a {
+    color: #4c4c4c;
+    font-family: 'Noto Sans';
+    font-weight: normal;
+    font-style: normal;
+}
+
+ul>li>a {
+    font-family: 'Noto Sans';
+    font-weight: normal;
+    font-style: normal;
+}
+
+ul>li>a:hover {
+    text-decoration: none;
+    color: purple;
+}
+
+ul>li>a:focus {
+    text-decoration: none;
+    border-bottom: 2px solid purple;
+    padding-bottom: 2px;
+}
+
+ol,
+ul {
+    margin-top: -9px;
+    margin-bottom: 10px;
+}
+
+li.kanan {
+    float: right;
+    margin-right: 0;
+}
+
+div.item.active {
+    max-height: 293px;
+}
+
+.wrap-list {
+    border: 1px solid transparent;
+    padding: 27px 27px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 4.7px 0.3px rgba(0, 0, 0, 0.24);
+    box-sizing: border-box;
+}
+
+.carousel-inner {
+    border-radius: 10px;
+}
+
+.carousel-control.right,
+.carousel-control.left {
+    border-radius: 10px;
+}
+
+div.search-right {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4c4c4c;
+}
+
+label {
+    color: #4c4c4c;
+    font-weight: lighter;
+}
+
+.radio label {
+    margin-right: 13px;
+}
+
+.radio {
+    margin-top: -2px;
+    margin-bottom: 0px;
+}
+
+.btn-cari {
+    background-color: purple;
+    width: 100px;
+    border-radius: 25px;
+    margin-top: 20px;
+    color: white;
+}
+
+div.text-promo {
+    font-size: 18px !important;
+    font-weight: bold;
+    line-height: 2.17;
+    text-align: left;
+    color: #282828;
+    padding-top: 8px;
+}
+
+.thumb-promo {
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 1px grey;
+    margin-top: 8px;
+}
+
+.img-thumb img {
+    width: 100%;
+    position: relative;
+}
+
+.img-promo {
+    width: 100%;
+    height: 155px;
+}
+
+.body-caption {
+    text-align: left;
+    padding: 10px;
+}
+
+.disc {
+    position: absolute;
+    width: 50px;
+    background-color: purple;
+    text-align: center;
+    top: 0;
+    left: 0;
+    color: white;
+    border-radius: 5px 0 5px 0;
+}
+
+.trip {
+    color: white;
+    position: absolute;
+    margin: 0 auto;
+    background-color: orange;
+    top: 45%;
+    left: 30%;
+    width: 70px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.caption-price {
+    color: #8a36a9;
+    font-size: 13px;
+}
+
+.caption-tittle {
+    font-size: 13px;
+    text-align: left;
+    margin-top: 10px;
+    line-height: 1.15;
+    color: #4c4c4c;
+}
+
+.caption-duration {
+    font-size: 11px;
+    text-align: left;
+    line-height: 1.3;
+    margin-top: 10px;
+    color: #9e9e9e;
+}
+
+.travel-name {
+    font-size: 11px;
+    text-align: left;
+    color: #9e9e9e;
+}

@@ -1,0 +1,83 @@
+<nav class="navbar navbar-transparent navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+            <a class="navbar-brand" href="#">
+                <img alt="Brand" src="../assets/img/travinesia-logo.png" class="brand-logo">
+            </a>
+        </div>
+
+        <form class="navbar-form navbar-left">
+            <div class="input-group stylish-input-group">
+                <input type="text" class="form-control" placeholder="Cari Lokasi Wisata">
+                <span class="input-group-addon">
+                <button type="submit">
+                    <span class="glyphicon glyphicon-search"></span>
+                </button>
+                </span>
+            </div>
+        </form>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a role="button">Daftar</a>
+                </li>
+                <li>
+                    <a role="button" (click)="toggleLogin()">Masuk <span class="glyphicon glyphicon-chevron-down"></span></a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+
+
+<div *ngIf='showLogin' (click)="toggleLogin()" class="modal-bg">
+</div>
+
+<div *ngIf='showLogin' class="login-form">
+    <form>
+        <div class="trv-form-login">
+            <div class="trv-input-login">
+                <input type="text" class="form-control" placeholder="Email/Username">
+            </div>
+        </div>
+
+        <div class="trv-form-login">
+            <div class="trv-input-login">
+                <input type="text" class="form-control" placeholder="Password">
+            </div>
+        </div>
+
+        <div class="login-forgot">
+            <div class="col-md-6">
+                <input type="checkbox" class="checkbox">
+                <label>Ingat Saya
+                </label>
+            </div>
+
+            <div class="col-md-6">
+                <p>Lupa Password ?</p>
+            </div>
+        </div>
+
+        <button class="btn btn-masuk" type="submit">Masuk</button>
+
+        <div class="trv-line-login"></div>
+
+        <button class="btn btn-facebook" type="submit">Masuk Dengan Facebook</button>
+        <button class="btn btn-gmail" type="submit">Daftar Dengan Gmail</button>
+    </form>
+</div>
+<!-- end login form  -->

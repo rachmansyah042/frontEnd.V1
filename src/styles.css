@@ -1,0 +1,200 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('fonts/NotoSans.eot');
+    src: url('fonts/NotoSans.eot?#iefix') format('embedded-opentype'), url('fonts/NotoSans.woff2') format('woff2'), url('fonts/NotoSans.woff') format('woff'), url('fonts/NotoSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?eu6jjf');
+    src: url('fonts/icomoon.eot?eu6jjf#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?eu6jjf') format('truetype'), url('fonts/icomoon.woff?eu6jjf') format('woff'), url('fonts/icomoon.svg?eu6jjf#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fishing-sign:before {
+    content: "\e900";
+    color: #f44336;
+}
+
+.icon-hotel-with-three-floors:before {
+    content: "\e901";
+    color: #3f51b5;
+}
+
+.icon-human-foot-prints:before {
+    content: "\e902";
+    color: #4caf50;
+}
+
+.icon-island-with-palm-trees:before {
+    content: "\e903";
+    color: #03a9f4;
+}
+
+.icon-love-hot-air-balloon:before {
+    content: "\e904";
+    color: #e91e63;
+}
+
+.icon-mountains-with-trees:before {
+    content: "\e905";
+    color: #795548;
+}
+
+.icon-sea-ship-with-containers:before {
+    content: "\e906";
+    color: #cddc39;
+}
+
+.icon-theatre-masks:before {
+    content: "\e907";
+    color: #ff9800;
+}
+
+.icon-calendar:before {
+    content: "\e908";
+    color: #a3a3a3;
+}
+
+.icon-question .path1:before {
+    content: "\e909";
+    color: rgb(37, 183, 211);
+}
+
+.icon-question .path2:before {
+    content: "\e90a";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+
+.icon-star:before {
+    content: "\e90b";
+    color: #fac917;
+}
+
+body,
+h1,
+h2,
+h3 {
+    font-family: 'Noto Sans';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+.container-fluid {
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-fluid-bar {
+    padding-right: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 71px;
+    padding-left: 0px;
+}
+
+
+/*search */
+
+.stylish-input-group {
+    width: 514px;
+}
+
+.navbar-form .input-group .input-group-addon {
+    width: 30px;
+}
+
+.stylish-input-group .input-group-addon {
+    background: #e91e63 !important;
+}
+
+.stylish-input-group .form-control {
+    border-right: 0;
+    box-shadow: 0 0 0;
+    border-color: #ccc;
+}
+
+.stylish-input-group button {
+    border: 0;
+    background: transparent;
+}
+
+
+/*end search*/
+
+
+/*checkbox material design */
+
+.checkbox {
+    position: relative;
+    top: -0.375rem;
+    margin: 0 1rem 0 0;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.checkbox:before {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    content: "";
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid #f2f2f2;
+}
+
+.checkbox:checked:before {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    height: .5rem;
+    border-color: purple;
+    border-top-style: none;
+    border-right-style: none;
+}
+
+.checkbox:after {
+    content: "";
+    position: absolute;
+    top: -0.125rem;
+    left: 0;
+    width: 1.3rem;
+    height: 1.4rem;
+    background: #fff;
+    cursor: pointer;
+}
+
+
+/*end checkbox*/
