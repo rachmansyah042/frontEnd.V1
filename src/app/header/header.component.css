@@ -97,6 +97,17 @@ ul>li>a:focus .glyphicon-chevron-down {
     margin-left: -26px;
 }
 
+.label-checkbox {
+    position: relative;
+    top: -6px;
+    font-weight: normal;
+}
+
+.alert {
+    font-size: 10px;
+    color: red;
+}
+
 .modal-bg {
     position: fixed;
     width: 100%;
