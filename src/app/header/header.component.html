@@ -49,21 +49,17 @@
 <div *ngIf='showLogin' class="login-form">
     <form [formGroup]="rForm" (ngSubmit)="addPost(rForm.value)">
         <div class="trv-form-login">
-            <div class="trv-input-login">
-                <input type="text" class="form-control" placeholder="Email/Username" formControlName="email" autofocus>
-                <div class="alert" *ngIf="!rForm.controls['email'].valid && rForm.controls['email'].touched">{{emailAlertMessage}}</div>
-            </div>
+            <input type="text" class="form-control" placeholder="Email/Username" formControlName="email" autofocus>
+            <div class="trv-alert" *ngIf="!rForm.controls['email'].valid && rForm.controls['email'].touched">{{emailAlertMessage}}</div>
         </div>
 
         <div class="trv-form-login">
-            <div class="trv-input-login">
-                <input type="text" class="form-control" placeholder="Password" formControlName="password">
-                <div class="alert" *ngIf="!rForm.controls['password'].valid && rForm.controls['password'].touched">{{passwordAlertMessage}}</div>
-            </div>
+            <input type="text" class="form-control" placeholder="Password" formControlName="password">
+            <div class="trv-alert" *ngIf="!rForm.controls['password'].valid && rForm.controls['password'].touched">{{passwordAlertMessage}}</div>
         </div>
 
         <div class="login-forgot">
-            <div class="col-md-6">
+            <div class="col-md-6 text-left">
                 <input type="checkbox" class="checkbox">
                 <label class="label-checkbox"> Ingat Saya
                 </label>

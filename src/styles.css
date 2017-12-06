@@ -140,7 +140,11 @@ body {
 }
 
 .form-control {
-    border-radius: 0;
+    border-radius: 3px;
+}
+
+.form-group {
+    margin-bottom: 9px;
 }
 
 .form-control:focus {
@@ -149,9 +153,13 @@ body {
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px #e91e63;
 }
 
+input:focus {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px #e91e63;
+}
+
 .container-fluid {
-    padding-right: 25px;
-    padding-left: 25px;
+    padding-right: 21px;
+    padding-left: 21px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -224,7 +232,7 @@ body {
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
     height: .5rem;
-    border-color: purple;
+    border-color: #ab47bc;
     border-top-style: none;
     border-right-style: none;
 }

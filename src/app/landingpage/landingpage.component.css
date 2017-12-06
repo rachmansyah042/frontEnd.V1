@@ -5,7 +5,26 @@ ul.head-category li {
     padding-left: 0px;
 }
 
-li>a {
+.diskon-category {
+    display: inline-block;
+    padding-right: 15px;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.lihat-diskon {
+    float: right;
+    margin-right: -15px;
+    color: #9c27b0;
+    font-size: 15px;
+}
+
+.lihat-diskon:hover {
+    text-decoration: none;
+}
+
+li a {
     color: #4a4a4a;
     font-family: 'Noto Sans';
     font-weight: normal;
@@ -20,12 +39,12 @@ ul>li>a {
 
 ul>li>a:hover {
     text-decoration: none;
-    color: purple;
+    color: #ab47bc;
 }
 
 ul>li>a:focus {
     text-decoration: none;
-    border-bottom: 2px solid purple;
+    border-bottom: 2px solid #ab47bc;
     padding-bottom: 2px;
 }
 
@@ -38,6 +57,7 @@ ul {
 li.kanan {
     float: right;
     margin-right: -15px;
+    list-style: none;
 }
 
 div.item.active {
@@ -46,11 +66,23 @@ div.item.active {
 
 .wrap-list {
     border: 1px solid transparent;
-    padding: 27px 27px;
+    padding: 14px 27px;
     border-radius: 10px;
     box-shadow: 0px 3px 4.7px 0.3px rgba(0, 0, 0, 0.24);
     box-sizing: border-box;
     background-color: white;
+}
+
+input[type=number] {
+    border-radius: 3px;
+}
+
+.jumlah {
+    width: 100px;
+}
+
+.jumlah-orang {
+    margin-left: 8px;
 }
 
 .carousel-inner {
@@ -66,6 +98,7 @@ div.search-right {
     font-size: 15px;
     font-weight: bold;
     color: #4a4a4a;
+    margin-bottom: 7px;
 }
 
 label {
@@ -83,20 +116,18 @@ label {
 }
 
 .btn-cari {
-    background-color: purple;
-    width: 100px;
+    background-color: #ab47bc;
+    width: 100%;
     border-radius: 3px;
-    margin-top: 20px;
     color: white;
+    margin-top: 2px;
 }
 
-div.text-promo {
+.text-diskon {
     font-size: 15px !important;
     font-weight: bold;
-    line-height: 2.17;
     text-align: left;
     color: #4a4a4a;
-    padding-top: 8px;
 }
 
 .thumb-promo {
@@ -129,7 +160,7 @@ div.text-promo {
 .disc {
     position: absolute;
     width: 50px;
-    background-color: purple;
+    background-color: #ab47bc;
     text-align: center;
     top: 0;
     left: 0;
@@ -150,7 +181,7 @@ div.text-promo {
 }
 
 .caption-price {
-    color: #8a36a9;
+    color: #ab47bc;
     font-size: 13px;
 }
 
