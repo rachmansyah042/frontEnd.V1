@@ -1,0 +1,71 @@
+<div class="container">
+  <div class="trv-tema-atas">
+    <h2><strong> Daftar di Travinesia </strong></h2>
+    <div class="trv-punya-akun">
+      <p> Sudah Punya Akun Travinesia? Masuk disini</p>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="wrap-form">
+      <form (ngSubmit)="onSubmit()" [formGroup]="registerForm">
+        <div class="form-group">
+          <label for="namaLengkap" class="label_form"> Nama Lengkap </label>
+          <input  formControlName="namaLengkap" id="namaLengkap" type="text" class="form-control" autofocus> 
+          <div *ngIf="registerForm.get('namaLengkap').touched && registerForm.get('namaLengkap').invalid" class="alert trv-alert">
+              <div *ngIf="registerForm.get('namaLengkap').errors.required">Nama Lengkap tidak boleh kosong.</div>
+              <div *ngIf="registerForm.get('namaLengkap').errors.maxLength">Maksimum 40 Karakter. {{ registerForm.get('namaLengkap').errors.maxLength.requiredLength }}</div>
+          </div> 
+        </div> 
+        <div class="form-group">
+          <label for="noTelepon"> Nomor Telepon </label>
+          <input id="noTelepon" type="text" class="form-control" formControlName="noTelepon">
+          <small>Harap mengisi nomor telepon yang masih aktif untuk menjamin keamanan transaksi</small> 
+          <div *ngIf="registerForm.get('noTelepon').touched && registerForm.get('noTelepon').invalid" class="alert trv-alert">
+            No Telepon tidak boleh kosong.
+            
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email"> Email </label>
+          <input id="email" type="email" class="form-control" formControlName="email"> 
+          <div *ngIf="registerForm.get('email').touched && registerForm.get('email').invalid" class="alert trv-alert">
+              Email tidak boleh kosong.
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="password"> Password </label>
+          <input id="password" type="password" class="form-control" formControlName="password"> 
+          <small>Minimal 8 karakter</small>
+          <div *ngIf="registerForm.get('password').touched && registerForm.get('password').invalid" class="alert trv-alert">
+            <div *ngIf="registerForm.get('password').errors.required">Password tidak boleh kosong.</div>
+            <div *ngIf="registerForm.get('password').errors.minLength">Minimal 8 karakter {{ registerForm.get('password').errors.minLength.requiredLength }}</div>
+          </div>
+        </div>
+        <div>
+            <input type="checkbox" class="checkbox">
+            <label class="label--checkbox">
+              Saya mengkonfirmasi telah menyetujui Syarat dan ketentuan,serta Kebijakan Privasi Travinesia. Baca Selengkapnya
+            </label>  
+        </div>
+        <button class="btn btn-daftar pull-right" type="submit">Daftar</button>
+      </form>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="row">
+      <div class="trv-atau">
+          <p>atau</p>
+      </div>
+    </div>  
+    <div class="row">
+      <div class="col-md-4">
+        <button class="btn btn-facebook">Daftar Dengan Facebook</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <button class="btn btn-google">Daftar Dengan Google</button>
+      </div>
+    </div>
+  </div>
+</div>
