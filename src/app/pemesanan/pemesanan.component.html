@@ -1,99 +1,24 @@
-<div class="container-fluid-bar">
-    <ul class="head-category">
-        <li>
-            <a href="#"> <span class="icon-island-with-palm-trees"></span> Beach</a>
-        </li>
-        <li>
-            <a href="#"> <span class="icon-hotel-with-three-floors"></span> City Tour</a>
-        </li>
-        <li>
-            <a href="#"> <span class="icon-theatre-masks"></span> Culture</a>
-        </li>
-        <li>
-            <a href="#"> <span class="icon-fishing-sign"></span> Fishing</a>
-        </li>
-        <li>
-            <a href="#"> <span class="icon-mountains-with-trees"></span> Hiking</a>
-        </li>
-        <li>
-            <a href="#"> <span class="icon-love-hot-air-balloon"></span> Honeymoon</a>
-        </li>
-        <li><a href="#"><span class="icon-human-foot-prints"></span> Tracking</a> </li>
-        <li>
-            <a href="#"> <span class="icon-sea-ship-with-containers"></span> Sailing</a>
-        </li>
-        <li class="kanan">
-            <a href=""> <span class="icon-question">
-                <span class="path1"></span><span class="path2"></span>
-                </span>
-                Bantuan
-            </a>
-        </li>
-    </ul>
-    <hr class="line-category">
-</div>
-
 <div class="my-akun"> Akun Saya</div>
 <span class="root-akun">Beranda > Akun > Pemesanan</span>
 <div class="wrapper">
-    <div class="sidebar-wrapper">
-        <aside id="sidebar">
-            <ul id="sidemenu" class="sidebar-nav">
-                <li>
-                    <a href="#">
-                        <span class="sidebar-icon"><i class="glyphicon glyphicon-user"></i></span>
-                        <span class="sidebar-title">Profil</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="sidebar-icon"><i class="glyphicon glyphicon-user"></i></span>
-                        <span class="sidebar-title">Pemesanan</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="sidebar-icon"><i class="glyphicon glyphicon-user"></i></span>
-                        <span class="sidebar-title">Favorit</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="sidebar-icon"><i class="glyphicon glyphicon-user"></i></span>
-                        <span class="sidebar-title">Notifikasi</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="sidebar-icon"><i class="glyphicon glyphicon-user"></i></span>
-                        <span class="sidebar-title">Promo</span>
-                    </a>
-                </li>
-            </ul>
-        </aside>
-    </div>
+    <!-- sidebar -->
+    <app-sidebar-akun-profil></app-sidebar-akun-profil>
     <main id="page-content-wrapper" role="main">
-        <div class="container">
-            <div class="row">
-                <div>
-                    <!-- Nav tabs -->
-                    <div class="card">
-                        <ul class="nav nav-tabs" role="tablist">
-                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Status Pembayaran</a></li>
-                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Status Pemesanan</a></li>
-                            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Konfirmasi Pemesanan</a></li>
-                            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Daftar Transaksi</a></li>
-                        </ul>
+        <!-- Nav tabs -->
+        <div class="card">
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#status-pembayaran" aria-controls="home" role="tab" data-toggle="tab">Status Pembayaran</a></li>
+                <li role="presentation"><a href="#status-pemesanan" aria-controls="profile" role="tab" data-toggle="tab">Status Pemesanan</a></li>
+                <li role="presentation"><a href="#konfirmasi-pemesanan" aria-controls="messages" role="tab" data-toggle="tab">Konfirmasi Pemesanan</a></li>
+                <li role="presentation"><a href="#daftar-transaksi" aria-controls="settings" role="tab" data-toggle="tab">Daftar Transaksi</a></li>
+            </ul>
 
-                        <!-- Tab panes -->
-                        <div class="tab-content">
-                            <div role="tabpanel" class="tab-pane active" id="home">Belum ada Transaksi</div>
-                            <div role="tabpanel" class="tab-pane" id="profile">Belum ada Transaksi</div>
-                            <div role="tabpanel" class="tab-pane" id="messages">Belum ada Transaksi</div>
-                            <div role="tabpanel" class="tab-pane" id="settings">Belum ada Transaksi</div>
-                        </div>
-                    </div>
-                </div>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="status-pembayaran">Belum ada Transaksi</div>
+                <div role="tabpanel" class="tab-pane" id="status-pemesanan">Belum ada </div>
+                <div role="tabpanel" class="tab-pane" id="konfirmasi-pemesanan">Belum ada Transaksi</div>
+                <div role="tabpanel" class="tab-pane" id="daftar-transaksi">Belum ada Transaksi</div>
             </div>
         </div>
     </main>
