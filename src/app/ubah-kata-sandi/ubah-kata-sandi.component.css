@@ -1,0 +1,74 @@
+ul.head-category li {
+    display: inline;
+    padding-right: 20px;
+    position: relative;
+    padding-left: 0px;
+}
+
+.line-category {
+    border-bottom: 1px solid #dddddd;
+    width: 103%;
+    position: relative;
+    bottom: 16px;
+}
+
+li.kanan {
+    float: right;
+    margin-right: -15px;
+    list-style: none;
+}
+
+li>a:hover {
+    color: #ab47bc;
+}
+
+.wrapper-ubah-sandi {
+    width: 565px;
+    height: 301px;
+    border-radius: 10px;
+    border: solid 1px #dddddd;
+    margin: 54px auto;
+    box-sizing: border-box;
+}
+
+.head-ubah-kata-sandi {
+    font-size: 25.2px;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin-bottom: 13px;
+}
+
+.content-ubah-kata-sandi {
+    font-size: 13px;
+    color: #4a4a4a;
+    margin-top: -8px;
+    margin-bottom: 20px;
+}
+
+.label-kata-sandi {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-align: left;
+    font-weight: bold;
+    margin-left: 88px;
+}
+
+.input-ubah-kata-sandi {
+    width: 399px;
+    height: 42px;
+    padding: 10px;
+    border-radius: 3px;
+    border: solid 1px #dddddd;
+}
+
+.btn-ubah-kata-sandi {
+    width: 167px;
+    height: 35px;
+    border-radius: 3px;
+    margin-top: 20px;
+    background-color: #8e3caa;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+}

@@ -143,6 +143,10 @@ body {
     border-radius: 3px;
 }
 
+.form-control::-webkit-input-placeholder {
+    color: #9e9e9e;
+}
+
 .form-group {
     margin-bottom: 9px;
 }
