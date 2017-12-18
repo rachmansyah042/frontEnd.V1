@@ -12,10 +12,12 @@ import { HeaderUserComponent } from './header-user/header-user.component';
 import { SidebarAkunProfilComponent } from './sidebar-akun-profil/sidebar-akun-profil.component';
 import { FooterComponent } from './footer/footer.component';
 import { EksternalComponent } from './eksternal/eksternal.component';
-
-import { routes } from './app.route';
 import { LupaKataSandiComponent } from './lupa-kata-sandi/lupa-kata-sandi.component';
 import { UbahKataSandiComponent } from './ubah-kata-sandi/ubah-kata-sandi.component';
+import { LoginpageComponent } from "./loginpage/loginpage.component";
+
+import { routes } from './app.route';
+
 
 @NgModule({
   declarations: [
@@ -29,6 +31,7 @@ import { UbahKataSandiComponent } from './ubah-kata-sandi/ubah-kata-sandi.compon
     FooterComponent,
     LupaKataSandiComponent,
     UbahKataSandiComponent,
+    LoginpageComponent,
 
   ],
   imports: [

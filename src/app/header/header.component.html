@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-            <a class="navbar-brand" href="#">
+            <a [routerLink]="['']" class="navbar-brand" href="#">
                 <img alt="Brand" src="../assets/img/travinesia-logo.png" class="brand-logo">
             </a>
         </div>
@@ -29,7 +29,7 @@
 
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a role="button">Daftar</a>
+                    <a [routerLink]="['/login']" role="button">Daftar</a>
                 </li>
                 <li>
                     <a role="button" (click)="toggleLogin()">Masuk <span class="glyphicon glyphicon-chevron-down"></span></a>
@@ -41,6 +41,42 @@
     <!-- /.container-fluid -->
 </nav>
 
+<div class="container-fluid-bar">
+    <ul class="head-category">
+        <li>
+            <a href="#"> <span class="icon-island-with-palm-trees"></span> Beach</a>
+        </li>
+        <li>
+            <a href="#"> <span class="icon-hotel-with-three-floors"></span> City Tour</a>
+        </li>
+        <li>
+            <a href="#"> <span class="icon-theatre-masks"></span> Culture</a>
+        </li>
+        <li>
+            <a href="#"> <span class="icon-fishing-sign"></span> Fishing</a>
+        </li>
+        <li>
+            <a href="#"> <span class="icon-mountains-with-trees"></span> Hiking</a>
+        </li>
+        <li>
+            <a href="#"> <span class="icon-love-hot-air-balloon"></span> Honeymoon</a>
+        </li>
+        <li><a href="#"><span class="icon-human-foot-prints"></span> Tracking</a> </li>
+        <li>
+            <a href="#"> <span class="icon-sea-ship-with-containers"></span> Sailing</a>
+        </li>
+        <li class="kanan">
+            <a href=""> <span class="icon-question">
+                <span class="path1"></span><span class="path2"></span>
+                </span>
+                Bantuan
+            </a>
+        </li>
+    </ul>
+    <hr class="line-category">
+</div>
+
+<router-outlet></router-outlet>
 
 
 <div *ngIf='showLogin' (click)="toggleLogin()" class="modal-bg">
@@ -49,12 +85,12 @@
 <div *ngIf='showLogin' class="login-form">
     <form [formGroup]="rForm" (ngSubmit)="addPost(rForm.value)">
         <div class="trv-form-login">
-            <input type="text" class="form-control" placeholder="Email/Username" formControlName="email" autofocus>
+            <input type="text" class="form-control" placeholder="Email" formControlName="email" autofocus>
             <div class="trv-alert" *ngIf="!rForm.controls['email'].valid && rForm.controls['email'].touched">{{emailAlertMessage}}</div>
         </div>
 
         <div class="trv-form-login">
-            <input type="text" class="form-control" placeholder="Password" formControlName="password">
+            <input id="password" class="form-control" placeholder="Password" type="password" data-toggle="password" formControlName="password">
             <div class="trv-alert" *ngIf="!rForm.controls['password'].valid && rForm.controls['password'].touched">{{passwordAlertMessage}}</div>
         </div>
 
@@ -75,7 +111,7 @@
         <div class="trv-line-login"></div>
 
         <button class="btn btn-facebook" type="submit"> <span class="icon-facebook"></span> Masuk Dengan Facebook</button>
-        <button class="btn btn-gmail" type="submit">Daftar Dengan Gmail</button>
+        <button class="btn btn-gmail" type="submit">Masuk Dengan Gmail</button>
     </form>
 </div>
 <!-- end login form  -->

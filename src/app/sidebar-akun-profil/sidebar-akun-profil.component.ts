@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import 'rxjs/add/operator/filter';
 
 @Component({
   selector: 'app-sidebar-akun-profil',
@@ -6,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidebar-akun-profil.component.css']
 })
 export class SidebarAkunProfilComponent implements OnInit {
+  order: string;
 
-  constructor() { }
+  constructor(private routeActive : ActivatedRoute) { }
 
   ngOnInit() {
-  }
+    this.routeActive.queryParams.filter(params => params.order).subscribe(params => {
+      console.log(params); // {order: "popular"}
 
+      this.order = params.order;
+      console.log(this.order); // popular
+    });
 }
+  }

@@ -1,40 +1,4 @@
-<!-- <div class="modal-bg"></div> -->
-
-<div class="container-fluid-bar">
-    <ul class="head-category">
-        <li>
-            <a href="#"> <span class="icon-island-with-palm-trees"></span> Beach</a>
-        </li>
-        <li>
-            <a href="#"> <span class="icon-hotel-with-three-floors"></span> City Tour</a>
-        </li>
-        <li>
-            <a href="#"> <span class="icon-theatre-masks"></span> Culture</a>
-        </li>
-        <li>
-            <a href="#"> <span class="icon-fishing-sign"></span> Fishing</a>
-        </li>
-        <li>
-            <a href="#"> <span class="icon-mountains-with-trees"></span> Hiking</a>
-        </li>
-        <li>
-            <a href="#"> <span class="icon-love-hot-air-balloon"></span> Honeymoon</a>
-        </li>
-        <li><a href="#"><span class="icon-human-foot-prints"></span> Tracking</a> </li>
-        <li>
-            <a href="#"> <span class="icon-sea-ship-with-containers"></span> Sailing</a>
-        </li>
-        <li class="kanan">
-            <a href=""> <span class="icon-question">
-                <span class="path1"></span><span class="path2"></span>
-                </span>
-                Bantuan
-            </a>
-        </li>
-    </ul>
-</div>
-
-<div class="container-fluid">
+<div class="container-fluid-page">
     <div class="row">
         <div class="col-md-8">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -81,13 +45,13 @@
                             <div class="form-group">
                                 <label for="lokasi">Lokasi : </label>
                                 <select class="form-control">
-                                            <option>Pilih Lokasi</option>
-									 		<option>Jawa</option>
-									 		<option>Kalimantan</option>
-									 		<option>Sumatera</option>
-									 		<option>Sulawesi</option>
-									 		<option>NTB</option>
-									 		<option>NTT</option>
+                                            <option >Pilih Lokasi</option>
+									 		<option >Jawa</option>
+									 		<option >Kalimantan</option>
+									 		<option >Sumatera</option>
+									 		<option >Sulawesi</option>
+									 		<option >NTB</option>
+									 		<option >NTT</option>
 									 	</select>
                             </div>
                         </div>
@@ -142,8 +106,8 @@
                             <div class="form-group">
                                 <label for="optradio">Jenis Trip : </label>
                                 <div class="radio">
-                                    <label><input type="radio" name="optradio">Open</label>
-                                    <label><input type="radio" name="optradio">Private</label>
+                                    <label class="radio"><input type="radio" name="radios"><span class="outer"><span class="inner"></span></span>Open</label>
+                                    <label class="radio"><input type="radio" name="radios"><span class="outer"><span class="inner"></span></span>Private</label>
                                 </div>
                             </div>
                         </div>
@@ -151,8 +115,10 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="kategori">Jumlah :</label> <br>
-                                <input type="number" class="jumlah">
-                                <label class="jumlah-orang">Orang</label>
+                                <div class="input-group">
+                                    <input type="number" class="jumlah form-control">
+                                    <label class="jumlah-orang">Orang</label>
+                                </div>
                             </div>
                         </div>
 
@@ -172,7 +138,7 @@
         <div class="row">
             <div class="diskon-category text-diskon">
                 Diskon Minggu Ini </div>
-            <a class="diskon-category lihat-diskon" href="#">Lihat Semua <span class="glyphicon glyphicon-chevron-right"> </span></a>
+            <a class="diskon-category lihat-diskon" [routerLink]="['/login']">Lihat Semua <span class="glyphicon glyphicon-chevron-right"> </span></a>
 
             <div class="row">
                 <div class="col-md-2 col-sm-4">
