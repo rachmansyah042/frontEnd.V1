@@ -2,7 +2,7 @@
     width: 1366px;
     height: 75px;
     background-color: #f5f5f5;
-    border: solid 1px #a1a1a1;
+    border: solid 1px #dddddd;
 }
 
 .wrap-head {
@@ -73,7 +73,7 @@
     color: rgba(158, 158, 158, 0.6);
 }
 
-.input-ubah-kata-sandi::-moz-input-placeholder {
+.input-ubah-kata-sandi::-moz-placeholder {
     font-size: 12px;
     color: rgba(158, 158, 158, 0.6);
     text-align: center;

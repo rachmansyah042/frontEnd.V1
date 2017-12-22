@@ -17,6 +17,7 @@ import { UbahKataSandiComponent } from './ubah-kata-sandi/ubah-kata-sandi.compon
 import { LoginpageComponent } from "./loginpage/loginpage.component";
 
 import { routes } from './app.route';
+import { FavoritUserComponent } from './favorit-user/favorit-user.component';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { routes } from './app.route';
     LupaKataSandiComponent,
     UbahKataSandiComponent,
     LoginpageComponent,
+    FavoritUserComponent,
 
   ],
   imports: [

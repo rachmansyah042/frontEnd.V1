@@ -10,6 +10,7 @@ import { EksternalComponent } from './eksternal/eksternal.component';
 import { LupaKataSandiComponent } from './lupa-kata-sandi/lupa-kata-sandi.component';
 import { UbahKataSandiComponent } from './ubah-kata-sandi/ubah-kata-sandi.component';
 import { LoginpageComponent } from "./loginpage/loginpage.component";
+import { FavoritUserComponent } from "./favorit-user/favorit-user.component";
 
 
 export const routes :Routes = [
@@ -23,7 +24,7 @@ children:[
     {path:'', component:PemesananComponent},
     {path:'Profil', component:EksternalComponent},
     {path:'Pemesanan', component:PemesananComponent},
-    {path:'Favorit', component:EksternalComponent},
+    {path:'Favorit', component:FavoritUserComponent},
     {path:'Notifikasi', component:EksternalComponent},
     {path:'Promo', component:EksternalComponent}
 ]
