@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
+import { AppService } from '../app.service';
 
 @Component({
   selector: 'app-header',
@@ -7,6 +8,11 @@ import { FormBuilder, FormGroup, Validators } from "@angular/forms";
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+
+  user = {
+    email:'',
+    password:''
+  }
 
   showLogin:boolean = false;
 
@@ -24,7 +30,7 @@ export class HeaderComponent implements OnInit {
 
 
   
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, public appService: AppService) {
 
     this.initializeErrorMessage();
 
@@ -33,6 +39,14 @@ export class HeaderComponent implements OnInit {
       'email':[null, Validators.required]
 
     });
+
+    
+   }
+
+   onSubmit() {
+    this.appService.addUser(this.user).subscribe(user => {
+      console.log(user);
+    })
    }
 
    initializeErrorMessage() {
@@ -45,6 +59,8 @@ export class HeaderComponent implements OnInit {
      this.email = post.email;
      this.password = post.password;
    }
+
+   
 
   ngOnInit() {
   }

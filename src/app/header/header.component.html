@@ -83,14 +83,14 @@
 </div>
 
 <div *ngIf='showLogin' class="login-form">
-    <form [formGroup]="rForm" (ngSubmit)="addPost(rForm.value)">
+    <form [formGroup]="rForm" (ngSubmit)="addPost(rForm.value)" (submit)="onSubmit()">
         <div class="trv-form-login">
-            <input type="text" class="form-control" placeholder="Email" formControlName="email" autofocus>
+            <input type="text" class="form-control" placeholder="Email" formControlName="email" autofocus [(ngModel)]="user.email" name="email">
             <div class="trv-alert" *ngIf="!rForm.controls['email'].valid && rForm.controls['email'].touched">{{emailAlertMessage}}</div>
         </div>
 
         <div class="trv-form-login">
-            <input id="password" class="form-control" placeholder="Password" type="password" data-toggle="password" formControlName="password">
+            <input id="password" class="form-control" placeholder="Password" type="password" data-toggle="password" formControlName="password" [(ngModel)]="user.password" name="password">
             <div class="trv-alert" *ngIf="!rForm.controls['password'].valid && rForm.controls['password'].touched">{{passwordAlertMessage}}</div>
         </div>
 

@@ -2,7 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { RouterModule } from "@angular/router";
+import { RouterModule } from '@angular/router';
+
 
 import { AppComponent } from './app.component';
 import { LandingpageComponent } from './landingpage/landingpage.component';
@@ -17,6 +18,7 @@ import { UbahKataSandiComponent } from './ubah-kata-sandi/ubah-kata-sandi.compon
 import { LoginpageComponent } from "./loginpage/loginpage.component";
 
 import { routes } from './app.route';
+import { AppService } from './app.service'
 import { FavoritUserComponent } from './favorit-user/favorit-user.component';
 
 
@@ -44,7 +46,7 @@ import { FavoritUserComponent } from './favorit-user/favorit-user.component';
     RouterModule.forRoot(routes),
     
   ],
-  providers: [],
+  providers: [AppService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
