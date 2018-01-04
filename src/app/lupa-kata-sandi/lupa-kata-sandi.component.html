@@ -9,8 +9,10 @@
 <div class="wrapper-lupa-sandi text-center">
     <h2 class="head-kata-sandi">Lupa Password ?</h2>
     <p class="content-kata-sandi">Masukkan email login Anda, Travinesia akan mengirimkan email dan tautan untuk reset password Anda</p>
-    <input type="text" placeholder="Email Anda" class="input-kata-sandi">
-    <a class="btn btn-kata-sandi">Ubah Password</a>
+    <form (submit)="onSubmitEmail(isEdit)">
+        <input type="text" placeholder="Email Anda" class="input-kata-sandi" [(ngModel)]="user.email" name="email">
+        <a class="btn btn-kata-sandi">Ubah Password</a>
+    </form>
 </div>
 
 <p class="text-center">Masuk Travinesia, <a class="disini">disini</a></p>

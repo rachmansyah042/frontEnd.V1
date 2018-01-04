@@ -1,7 +1,14 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
-<app-header></app-header>
-<!-- <app-header-user></app-header-user> -->
+
+<div *ngIf='changeHeadUser'>
+    <app-header-user></app-header-user>
+</div>
+
+<div *ngIf='changeHead'>
+    <app-header></app-header>
+</div>
+
 <!-- <app-landingpage></app-landingpage> -->
 <!-- <app-sidebar-akun-profil></app-sidebar-akun-profil> -->
 <!-- <app-pemesanan></app-pemesanan> -->

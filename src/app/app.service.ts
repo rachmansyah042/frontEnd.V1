@@ -8,11 +8,11 @@ export class AppService {
     users:string[];
 
     constructor (public http:Http) {
-        this.users = ['harden', 'dadang'];
     }
 
     getUsers() {
-        return this.users
+        return this.http.get('http://travinesia.com:3000/v1/user/profile')
+        .map(res => res.json());
     }
 
     addUser(user) {

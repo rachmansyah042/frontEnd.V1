@@ -22,13 +22,21 @@ export class HeaderComponent implements OnInit {
   password:string = '';
   emailAlertMessage:string ='';
   passwordAlertMessage:string ='';
+  emailAtAlertMessage:string ='';
+
+
+  changeHead:boolean = true;
+  changeHeadUser:boolean = false;
+
+  toggleHead():void {
+   this.changeHead = !this.changeHead;
+   this.changeHeadUser = !this.changeHeadUser
+ }
 
 
   toggleLogin():void {
     this.showLogin = !this.showLogin;
   }
-
-
   
   constructor(private fb: FormBuilder, public appService: AppService) {
 
@@ -36,11 +44,9 @@ export class HeaderComponent implements OnInit {
 
     this.rForm = fb.group({
       'password':[null, Validators.required],
-      'email':[null, Validators.required]
-
+      'email':['', Validators.required],
     });
 
-    
    }
 
    onSubmit() {
@@ -52,6 +58,7 @@ export class HeaderComponent implements OnInit {
    initializeErrorMessage() {
     this.emailAlertMessage = "Email harus diisi";
     this.passwordAlertMessage = "Password harus diisi";
+    this.emailAtAlertMessage = "Alamat email salah"
   }
 
 
@@ -59,8 +66,6 @@ export class HeaderComponent implements OnInit {
      this.email = post.email;
      this.password = post.password;
    }
-
-   
 
   ngOnInit() {
   }

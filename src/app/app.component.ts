@@ -6,10 +6,14 @@ import { AppService } from './app.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   title = 'Travinesia';
+  changeHead:boolean = true;
+  changeHeadUser:boolean = false;
 
   constructor(public appService:AppService) {
     console.log(this.appService.getUsers());
   }
+
 }
