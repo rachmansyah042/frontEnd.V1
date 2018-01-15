@@ -1,6 +1,6 @@
 <div class="container-fluid-page">
     <div class="row">
-        <div class="col-md-8 ">
+        <div class="col-md-8 col-sm-12 col-xs-12">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -36,12 +36,12 @@
             </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-12 col-xs-12">
             <div class="wrap-list">
                 <form>
                     <div class="search-right">Cari paket Wisata</div>
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-sm-6">
                             <div class="form-group">
                                 <label for="lokasi">Lokasi : </label>
                                 <select class="form-control">
@@ -56,7 +56,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-sm-6">
                             <div class="form-group">
                                 <label for="kategori">Kategori : </label>
                                 <select class="form-control">
@@ -75,7 +75,7 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-sm-6">
                             <div class="form-group">
                                 <label for="tanggal">Tanggal Berangkat :</label>
                                 <div class="input-group">
@@ -87,7 +87,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-sm-6">
                             <div class="form-group">
                                 <label for="kategori">Hari : </label>
                                 <select class="form-control">
@@ -102,7 +102,7 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-sm-6">
                             <div class="form-group">
                                 <label for="optradio">Jenis Trip : </label>
                                 <div class="radio">
@@ -112,10 +112,10 @@
                             </div>
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="form-group">
-                                <label for="kategori">Jumlah :</label> <br>
-                                <div class="input-group">
+                                <label for="kategori" class="sigmPeople">Jumlah :</label>
+                                <div class="input-group sigm">
                                     <input type="number" class="jumlah form-control">
                                     <label class="jumlah-orang">Orang</label>
                                 </div>
@@ -124,7 +124,7 @@
 
                         <div class="row">
                             <div class="col-md-12">
-                                <button class="btn btn-cari" type="submit">Cari</button>
+                                <button [routerLink]="['/search']" class="btn btn-cari" type="submit">Cari</button>
                             </div>
                         </div>
                     </div>
@@ -141,19 +141,19 @@
             <a class="diskon-category lihat-diskon" (click)="goLogin()">Lihat Semua <span class="glyphicon glyphicon-chevron-right"> </span></a>
 
             <div class="row">
-                <div class="col-md-2 col-sm-4">
+                <div class="col-md-2 col-sm-4 col-xs-6">
                     <div class="thumb-promo">
                         <img src="../assets/img/1.jpg" class="img-promo">
                         <div class="disc">-10%</div>
                         <div class="trip">Open</div>
                         <div class="body-caption">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-sm-6 ">
                                     <span class="icon-star"></span>
                                     <span class="icon-star"></span>
                                     <span class="icon-star"></span>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-sm-6">
                                     <div class="caption-price">Rp 300.000</div>
                                 </div>
                             </div>
@@ -164,19 +164,19 @@
                     </div>
                 </div>
 
-                <div class="col-md-2 col-sm-4">
+                <div class="col-md-2 col-sm-4 col-xs-6">
                     <div class="thumb-promo">
                         <img src="../assets/img/1.jpg" class="img-promo">
                         <div class="disc">-10%</div>
                         <div class="trip">Open</div>
                         <div class="body-caption">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-sm-6">
                                     <span class="icon-star"></span>
                                     <span class="icon-star"></span>
                                     <span class="icon-star"></span>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-sm-6">
                                     <div class="caption-price">Rp 300.000</div>
                                 </div>
                             </div>
@@ -187,19 +187,19 @@
                     </div>
                 </div>
 
-                <div class="col-md-2 col-sm-4">
+                <div class="col-md-2 col-sm-4 col-xs-6">
                     <div class="thumb-promo">
                         <img src="../assets/img/1.jpg" class="img-promo">
                         <div class="disc">-10%</div>
                         <div class="trip">Open</div>
                         <div class="body-caption">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-sm-6">
                                     <span class="icon-star"></span>
                                     <span class="icon-star"></span>
                                     <span class="icon-star"></span>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-sm-6">
                                     <div class="caption-price">Rp 300.000</div>
                                 </div>
                             </div>
@@ -210,19 +210,19 @@
                     </div>
                 </div>
 
-                <div class="col-md-2 col-sm-4">
+                <div class="col-md-2 col-sm-4 col-xs-6">
                     <div class="thumb-promo">
                         <img src="../assets/img/1.jpg" class="img-promo">
                         <div class="disc">-10%</div>
                         <div class="trip">Open</div>
                         <div class="body-caption">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-sm-6">
                                     <span class="icon-star"></span>
                                     <span class="icon-star"></span>
                                     <span class="icon-star"></span>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-sm-6">
                                     <div class="caption-price">Rp 300.000</div>
                                 </div>
                             </div>
@@ -233,19 +233,19 @@
                     </div>
                 </div>
 
-                <div class="col-md-2 col-sm-4">
+                <div class="col-md-2 col-sm-4 col-xs-6 ">
                     <div class="thumb-promo">
                         <img src="../assets/img/1.jpg" class="img-promo">
                         <div class="disc">-10%</div>
                         <div class="trip">Open</div>
                         <div class="body-caption">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-sm-6">
                                     <span class="icon-star"></span>
                                     <span class="icon-star"></span>
                                     <span class="icon-star"></span>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-sm-6">
                                     <div class="caption-price">Rp 300.000</div>
                                 </div>
                             </div>
@@ -256,19 +256,19 @@
                     </div>
                 </div>
 
-                <div class="col-md-2 col-sm-4">
+                <div class="col-md-2 col-sm-4 col-xs-6">
                     <div class="thumb-promo">
                         <img src="../assets/img/1.jpg" class="img-promo">
                         <div class="disc">-10%</div>
                         <div class="trip">Open</div>
                         <div class="body-caption">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-sm-6">
                                     <span class="icon-star"></span>
                                     <span class="icon-star"></span>
                                     <span class="icon-star"></span>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-sm-6">
                                     <div class="caption-price">Rp 300.000</div>
                                 </div>
                             </div>

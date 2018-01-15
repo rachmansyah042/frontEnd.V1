@@ -66,3 +66,31 @@
 
 
 /* end content */
+
+@media (min-width:450px) and (max-width: 992px) {
+    .tab-content {
+        padding: 0px 41px 0px 230px;
+        width: 565px;
+        height: 384px;
+        border-radius: 3px;
+        border: solid 1px #e0e0e0;
+        line-height: 384px;
+        font-weight: bold;
+    }
+}
+
+@media (max-width:450px) {
+    .card {
+        background: transparent;
+        margin-left: 15px;
+    }
+    .tab-content {
+        padding: 0px;
+        width: 330px;
+        height: 384px;
+        border-radius: 3px;
+        border: solid 1px #e0e0e0;
+        line-height: 384px;
+        font-weight: bold;
+    }
+}

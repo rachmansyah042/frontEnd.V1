@@ -9,8 +9,8 @@ import { AppService } from './app.service';
 
 export class AppComponent {
   title = 'Travinesia';
-  changeHead:boolean = true;
-  changeHeadUser:boolean = false;
+  changeHead:boolean = false;
+  changeHeadUser:boolean = true;
 
   constructor(public appService:AppService) {
     console.log(this.appService.getUsers());

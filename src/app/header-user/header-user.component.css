@@ -10,6 +10,10 @@
     margin-top: -7px;
 }
 
+.icon-bar {
+    background-color: grey;
+}
+
 li>a {
     color: #4c4c4c;
     font-family: 'Noto Sans';
@@ -81,4 +85,39 @@ li.kanan {
     float: right;
     margin-right: -15px;
     list-style: none;
+}
+
+@media (max-width:425px) {
+    .stylish-input-group {
+        width: 313px;
+    }
+    .notif {
+        position: absolute;
+        top: 8px;
+        left: 98px;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: #ab47bc;
+    }
+    .foto-profil {
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        position: absolute;
+        top: 1px;
+        left: 12px;
+    }
+    .btn-trv {
+        position: relative;
+        top: -4px;
+        border-radius: 3px;
+        color: #ab47bc;
+        border: solid 1px #ab47bc;
+        background-color: transparent;
+        margin-left: 15px;
+        margin-right: -8px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
 }

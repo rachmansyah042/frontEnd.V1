@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { AppService } from '../app.service';
 
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -40,6 +41,7 @@ export class HeaderComponent implements OnInit {
   
   constructor(private fb: FormBuilder, public appService: AppService) {
 
+
     this.initializeErrorMessage();
 
     this.rForm = fb.group({
@@ -67,7 +69,6 @@ export class HeaderComponent implements OnInit {
      this.password = post.password;
    }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }

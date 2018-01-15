@@ -20,6 +20,9 @@ import { LoginpageComponent } from "./loginpage/loginpage.component";
 import { routes } from './app.route';
 import { AppService } from './app.service'
 import { FavoritUserComponent } from './favorit-user/favorit-user.component';
+import { TrvSidebarComponent } from './trv-sidebar/trv-sidebar.component';
+import { TrvSearchResultComponent } from './trv-search-result/trv-search-result.component';
+import { TrvSearchNavbarComponent } from './trv-search-navbar/trv-search-navbar.component';
 
 
 @NgModule({
@@ -36,6 +39,9 @@ import { FavoritUserComponent } from './favorit-user/favorit-user.component';
     UbahKataSandiComponent,
     LoginpageComponent,
     FavoritUserComponent,
+    TrvSidebarComponent,
+    TrvSearchResultComponent,
+    TrvSearchNavbarComponent,
 
   ],
   imports: [
