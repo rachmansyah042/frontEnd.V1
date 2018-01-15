@@ -31,7 +31,6 @@
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: #fbfbfb;
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
     -o-transition: all .5s ease;

@@ -1,3 +1,8 @@
+.glyphicon-star-empty:before {
+    content: "\E007";
+    color: #dddddd;
+}
+
 .root-search {
     margin-top: -23px;
     margin-left: -45px;
@@ -186,7 +191,7 @@
     left: -32px;
     margin-bottom: 3px;
     width: 198px;
-    height: 173px;
+    height: 180px;
     border: solid 0.8px #dddddd;
 }
 
@@ -234,13 +239,29 @@
     color: #4c4c4c;
 }
 
+.range-min {
+    font-size: 12.7px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+.range-max {
+    font-size: 12.7px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    margin-left: 65px;
+}
+
 
 /* radio button  */
 
 .radio {
     display: block;
-    line-height: 40px;
-    margin-left: -15px;
+    line-height: 33px !important;
+    height: 20px;
+    margin-top: -8px;
     cursor: pointer;
 }
 
@@ -301,3 +322,51 @@
 
 
 /* end radio button */
+
+
+/* range bar slider */
+
+.slidecontainer {
+    width: 100%;
+    margin-top: 10px;
+    /* Width of the outside container */
+}
+
+
+/* The slider itself */
+
+.slider {
+    -webkit-appearance: none;
+    width: 117px;
+    height: 1px;
+    margin-bottom: 10px;
+    background-color: #ab47bc;
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 13px;
+    height: 13px;
+    background-color: #ab47bc;
+    border: solid 1px #ab47bc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 13px;
+    height: 13px;
+    background-color: #ab47bc;
+    border: solid 1px #ab47bc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+/* end range bar */

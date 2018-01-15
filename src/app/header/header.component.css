@@ -39,11 +39,13 @@ li>a {
 }
 
 li>a:hover {
-    background: white;
+    color: #ab47bc;
+    text-decoration: none;
 }
 
-ul>li>a:focus {
-    background: white;
+li>a:focus {
+    color: #ab47bc;
+    text-decoration: none;
 }
 
 .glyphicon-chevron-down {
