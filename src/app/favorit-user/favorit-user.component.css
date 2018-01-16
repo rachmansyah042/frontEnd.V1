@@ -1,4 +1,9 @@
+.col-md-2 {
+    width: 19.666667% !important;
+}
+
 .thumb-promo {
+    width: 165px;
     border-radius: 10px;
     border: none;
     position: relative;
@@ -44,8 +49,8 @@
     position: absolute;
     margin: 0 auto;
     background-color: orange;
-    top: 45%;
-    left: 30%;
+    top: 42%;
+    left: 35%;
     width: 70px;
     text-align: center;
     border-radius: 25px;
@@ -53,7 +58,7 @@
 
 .caption-price {
     color: #ab47bc;
-    font-size: 13px;
+    font-size: 11px;
 }
 
 .caption-tittle {

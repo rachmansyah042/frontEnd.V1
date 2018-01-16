@@ -20,7 +20,7 @@ export const routes :Routes = [
     {path:'', component:LandingpageComponent},
     {path:'Akun', pathMatch: 'full', redirectTo: 'Akun/Profil' },
     {path:'search', component:TrvSearchResultComponent},
-    {path:'searchNavbar', component:TrvSearchNavbarComponent},
+    {path:'searchNavbar/:query', component:TrvSearchNavbarComponent},
     {path:'login', component:LoginpageComponent},
     {path:'Notifikasi', component:EksternalComponent},
     {path:'JadiTravel', component:EksternalComponent},

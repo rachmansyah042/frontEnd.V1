@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AppService } from '../app.service';
+import { Routes, RouterModule, Router, ActivatedRoute } from '@angular/router';
+import 'rxjs/add/operator/filter';
 
 @Component({
   selector: 'app-header-user',
@@ -10,13 +12,26 @@ export class HeaderUserComponent implements OnInit {
 
 
   profile:any =[];
+  query:any;
+
+  querySearch(e) {
+    this.query= e.target.value;
+    console.log(this.query);
+  }
+  
+
+
+
   constructor(public appService: AppService) {
     this.appService.getUsers().subscribe(profile => {
         console.log(profile);
     });
+   
    }
 
   ngOnInit() {
+
+
   }
 
 }
