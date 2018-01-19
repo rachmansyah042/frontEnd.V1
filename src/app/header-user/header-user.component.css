@@ -61,12 +61,12 @@ ul>li>a:focus .glyphicon-chevron-down {
 }
 
 .foto-profil {
-    width: 46px;
-    height: 46px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
     position: absolute;
-    top: 1px;
-    right: 5px;
+    top: 7px;
+    right: 10px;
 }
 
 .profil {
@@ -84,7 +84,7 @@ ul.head-category li {
     border-bottom: 1px solid #dddddd;
     width: 101.5%;
     position: relative;
-    bottom: 16px;
+    bottom: 18px;
 }
 
 li.kanan {

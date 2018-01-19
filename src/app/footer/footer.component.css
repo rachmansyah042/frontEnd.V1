@@ -7,8 +7,7 @@
 }
 
 .footer-brand-logo {
-    width: 174px;
-    height: 41px;
+    margin-top: -2px;
 }
 
 .cr-head {
@@ -31,7 +30,6 @@
 
 .cr-black {
     font-size: 13px;
-    line-height: 44px;
     text-align: left;
     color: #ffffff;
     margin-left: 40px;

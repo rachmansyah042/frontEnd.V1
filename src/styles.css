@@ -182,11 +182,28 @@ a {
     padding-left: 0px;
 }
 
+.container-fluid-bar-fixed {
+    background-color: white;
+    position: fixed;
+    width: 101.5%;
+    padding-top: 3px;
+    height: 40px;
+    line-height: 35px;
+    top: 92px;
+    margin-left: -22px;
+    margin-top: -41px;
+    z-index: 999;
+}
+
 .container-sidebar {
-    padding-right: 125px;
+    padding-right: 105px;
     padding-left: 90px;
     margin-right: auto;
     margin-left: auto;
+}
+
+.margin-content {
+    margin-top: 136px;
 }
 
 
