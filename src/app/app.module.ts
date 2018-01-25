@@ -23,6 +23,8 @@ import { FavoritUserComponent } from './favorit-user/favorit-user.component';
 import { TrvSidebarComponent } from './trv-sidebar/trv-sidebar.component';
 import { TrvSearchResultComponent } from './trv-search-result/trv-search-result.component';
 import { TrvSearchNavbarComponent } from './trv-search-navbar/trv-search-navbar.component';
+import { EtalaseTravelComponent } from './etalase-travel/etalase-travel.component';
+import { DaftarTravelComponent } from './daftar-travel/daftar-travel.component';
 
 
 @NgModule({
@@ -42,6 +44,8 @@ import { TrvSearchNavbarComponent } from './trv-search-navbar/trv-search-navbar.
     TrvSidebarComponent,
     TrvSearchResultComponent,
     TrvSearchNavbarComponent,
+    EtalaseTravelComponent,
+    DaftarTravelComponent,
 
   ],
   imports: [

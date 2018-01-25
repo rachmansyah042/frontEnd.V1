@@ -202,6 +202,13 @@ a {
     margin-left: auto;
 }
 
+.container-etalase {
+    padding-right: 100px;
+    padding-left: 110px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .margin-content {
     margin-top: 136px;
 }
