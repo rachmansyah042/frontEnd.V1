@@ -1,3 +1,7 @@
+[hidden] {
+    display: none !important;
+}
+
 .blur {
     position: fixed;
     width: 100%;

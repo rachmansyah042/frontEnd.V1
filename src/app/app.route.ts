@@ -16,6 +16,8 @@ import { TrvSearchResultComponent } from "./trv-search-result/trv-search-result.
 import { TrvSearchNavbarComponent} from "./trv-search-navbar/trv-search-navbar.component";
 import { EtalaseTravelComponent} from "./etalase-travel/etalase-travel.component";
 import { DaftarTravelComponent} from "./daftar-travel/daftar-travel.component";
+import { JualTripComponent} from "./jual-trip/jual-trip.component";
+import { JualTripContentComponent} from "./jual-trip-content/jual-trip-content.component";
 
 
 
@@ -27,6 +29,7 @@ export const routes :Routes = [
     {path:'login', component:LoginpageComponent},
     {path:'Notifikasi', component:EksternalComponent},
     {path:'JadiTravel', component:DaftarTravelComponent},
+    {path:'EtalaseTravel', component:EtalaseTravelComponent},
     {path:'Akun', component:TrvSidebarComponent,
 children:[
     {path:'', component:PemesananComponent},
@@ -35,6 +38,16 @@ children:[
     {path:'Favorit', component:FavoritUserComponent},
     {path:'Notifikasi', component:EksternalComponent},
     {path:'Promo', component:EksternalComponent}
+]
+},
+{path:'JualTrip', component:JualTripComponent,
+children:[
+    {path:'', component:EksternalComponent},
+    {path:'Saldo', component:EksternalComponent},
+    {path:'JualTrip', component:JualTripContentComponent},
+    {path:'DaftarTrip', component:EksternalComponent},
+    {path:'TransaksiPenjualan', component:EksternalComponent},
+    {path:'EditProfilTravel', component:EksternalComponent}
 ]
 }
 
