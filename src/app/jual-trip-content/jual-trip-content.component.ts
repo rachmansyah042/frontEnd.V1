@@ -7,6 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JualTripContentComponent implements OnInit {
 
+
+  content1:boolean = true;
+  content2:boolean = false;
+
+  toggleJual():void {
+    this.content1 = !this.content1;
+    this.content2 = !this.content2;
+  }
+
   constructor() { }
 
   ngOnInit() {

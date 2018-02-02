@@ -18,7 +18,7 @@ import { EtalaseTravelComponent} from "./etalase-travel/etalase-travel.component
 import { DaftarTravelComponent} from "./daftar-travel/daftar-travel.component";
 import { JualTripComponent} from "./jual-trip/jual-trip.component";
 import { JualTripContentComponent} from "./jual-trip-content/jual-trip-content.component";
-
+import { JualTripContent2Component} from "./jual-trip-content2/jual-trip-content2.component";
 
 
 export const routes :Routes = [
