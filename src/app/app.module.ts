@@ -1,10 +1,9 @@
+import { Component, ElementRef, NgModule, NgZone, OnInit, ViewChild } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule, FormControl, } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes, PreloadAllModules } from '@angular/router';
  
-
 import { AppComponent } from './app.component';
 import { LandingpageComponent } from './landingpage/landingpage.component';
 import { HeaderComponent } from './header/header.component';
@@ -27,7 +26,8 @@ import { JualTripContentComponent } from './jual-trip-content/jual-trip-content.
 
 import { routes } from './app.route';
 import { AppService } from './app.service';
-import { JualTripContent2Component } from './jual-trip-content2/jual-trip-content2.component'
+import { JualTripContent2Component } from './jual-trip-content2/jual-trip-content2.component';
+import { AgmCoreModule, MapsAPILoader } from '@agm/core';
 
 
 @NgModule({
@@ -59,6 +59,10 @@ import { JualTripContent2Component } from './jual-trip-content2/jual-trip-conten
     FormsModule,
     ReactiveFormsModule,
     HttpModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyBClUZWzmnXM-51wYSX22_lI2dBouzEDXM',
+      libraries: ["places"]
+    }),
     RouterModule.forRoot(routes, { useHash: false, preloadingStrategy: PreloadAllModules }),
     
   ],
