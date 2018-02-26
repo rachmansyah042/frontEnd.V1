@@ -1,65 +1,59 @@
 .wrap-sidebar-info {
     position: relative;
     width: 314px;
-    height: 186px;
     border: solid 1px #dddddd;
     margin-bottom: 7px;
 }
 
-.info-head {
-    width: 312px;
-    height: 31px;
-    line-height: 31px;
+.wrap-info-content {
+    position: relative;
+    padding: 25px;
+    padding-bottom: 35px;
     text-align: center;
-    background-color: #f5f5f5;
-    font-size: 14.8px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    letter-spacing: normal;
-    color: #4a4a4a;
 }
 
-.wrap-info-content {
-    padding: 25px;
+.badge-travel {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 34px;
+    height: 34px;
 }
 
 .img-info {
-    width: 50px;
-    height: 59px;
-    float: left;
-    margin-right: 10px;
+    width: 179px;
+    height: 179px;
+    object-fit: contain;
 }
 
 .info-tittle {
-    font-size: 15px;
+    font-size: 20px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
     letter-spacing: normal;
-    line-height: 0px;
     color: #4a4a4a;
 }
 
 .info-tittle-address {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
-    line-height: 1;
     letter-spacing: normal;
-    text-align: left;
     color: #4a4a4a;
+    margin-bottom: 2px;
 }
 
 .info-level-travel {
     display: inline-block;
-    font-size: 10.2px;
+    font-size: 13px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
     letter-spacing: normal;
     color: #9c27b0;
+    margin-right: 8px;
 }
 
 .info-footer {
@@ -82,7 +76,7 @@
 
 .wrap-menu-info {
     width: 314px;
-    height: 240px;
+    height: 288px;
     border: solid 1px #dddddd;
     padding-top: 8px;
     margin-bottom: 7px;
@@ -122,42 +116,6 @@
     text-indent: 15px;
     margin-right: 40px;
     float: left;
-}
-
-.wrap-premium {
-    padding: 15px 25px 0 25px;
-    width: 314px;
-    height: 77px;
-    border: solid 1px #dddddd;
-}
-
-.btn-trv-premium {
-    width: 266px;
-    height: 31px;
-    border-radius: 2.4px;
-    background-color: #ab47bc;
-    font-size: 13.9px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    letter-spacing: normal;
-    text-align: center;
-    color: #ffffff;
-    border: 1px solid #dddddd;
-}
-
-.about-premium {
-    font-size: 10.2px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    letter-spacing: normal;
-    text-align: center;
-    color: #9c27b0;
-}
-
-.about-premium a:hover {
-    text-decoration: none;
 }
 
 .root-sidebar {

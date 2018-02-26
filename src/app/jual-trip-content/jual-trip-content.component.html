@@ -4,7 +4,9 @@
         <span class="state-all"> Tahap 1 dari 2</span>
     </div>
 
-    <div class="info-term"> Pastikan Trip yang Anda Jual sesuai dengan <span class="bold-term">Syarat dan Ketentuan </span> Travinesia. </div>
+    <div class="info-trip-term"> Jual Trip Travel Anda disini. Masukkan informasi trip selengkap mungkin untuk meningkatkan kepercayaan traveller terhadap paket trip yang ditawarkan. Berikan fasilitas yang terbaik Travel Anda.</div>
+
+    <div class="info-term" *ngIf='successedTrip'><span class="bold-term">Trip berhasil ditambahkan. </span> Silahkan cek pilihan "Daftar Trip" untuk melihat seluruh trip yang anda jual</div>
 
     <div class="wrap-form-trip">
         <label class="label-form" for="namaTrip">Nama Trip</label>
@@ -121,155 +123,217 @@
     </div>
 
     <div class="wrap-option">
-        <label class="label-form">Jenis Trip</label>
-        <div class="radio">
-            <label class="radio"><input type="radio" name="radios"><span class="outer"><span class="inner"></span></span>Open</label>
-            <label class="radio"><input type="radio" name="radios"><span class="outer"><span class="inner"></span></span>Private</label>
-        </div>
-
-        <label class="kategori">Kategori Trip </label>
-        <select class="form-control form-kategori">
-                    <option>Pilih Kategori</option>
-                    <option id="Beach" >Beach</option>
-                    <option id="City Tour" >City Tour</option>
-                    <option id="Culture">Culture</option>
-                    <option id="Fishing">Fishing</option>
-                    <option id="Hiking">Hiking</option>
-                    <option id="Honeymoon">Honeymoon</option>
-                    <option id="Tracking">Tracking</option>
-                    <option id="Sailing">Sailing</option>
-                </select>
-
-        <label class="durasi">Durasi Trip </label>
-        <select class="form-control form-durasi">
-                    <option>1 Hari</option>
-                    <option>2 Hari</option>
-                    <option>3 Hari</option>
-                    <option>4 Hari</option>
-                    <option>5 Hari</option>	
-                  </select>
-    </div>
-
-    <div class="wrap-label-fasilitas">
-        <label class="label-form">Fasilitas Trip </label>
-        <span class="glyphicon glyphicon-exclamation-sign"></span>
-        <span class="tittle-fasilitas">Pilih fasilitas apa saja yang termasuk dalam paket wisata yang akan anda jual. Jika tidak ada pada pilihan, anda dapat menulisakn pada kolom deskripsi di halaman berikutnya.</span>
-    </div>
-
-    <div class="wrap-fasilitas">
-        <label class="label-fasilitas">Penginapan</label>
         <div class="row">
-            <div class="col-md-3">
-                <input type="checkbox" class="checkbox">
-                <span class="checkbox-label-fasilitas">Homestay</span>
+            <div class="col-md-4">
+                <label class="label-form">Jenis Trip</label>
+                <div class="radio">
+                    <label class="radio"><input type="radio" name="radios"><span class="outer"><span class="inner"></span></span>Open</label>
+                    <label class="radio"><input type="radio" name="radios"><span class="outer"><span class="inner"></span></span>Private</label>
+                </div>
             </div>
 
-            <div class="col-md-3">
-                <input type="checkbox" class="checkbox">
-                <span class="checkbox-label-fasilitas">Villa</span>
-            </div>
-
-            <div class="col-md-3">
-                <input type="checkbox" class="checkbox">
-                <span class="checkbox-label-fasilitas">Hotel</span>
+            <div class="col-md-8">
+                <label class="kategori">Kategori Trip </label>
+                <span class="kategori-tittle">Kategori Utama :</span>
+                <select class="form-control form-kategori">
+                                <option>Pilih Kategori</option>
+                                <option id="Beach" >Beach</option>
+                                <option id="City Tour" >City Tour</option>
+                                <option id="Culture">Culture</option>
+                                <option id="Fishing">Fishing</option>
+                                <option id="Hiking">Hiking</option>
+                                <option id="Honeymoon">Honeymoon</option>
+                                <option id="Tracking">Tracking</option>
+                                <option id="Sailing">Sailing</option>
+                            </select>
             </div>
         </div>
 
-        <div class="margin-fasilitas"></div>
-        <label class="label-fasilitas">Transportasi</label>
+        <br>
+
         <div class="row">
-            <div class="col-md-3">
-                <input type="checkbox" class="checkbox">
-                <span class="checkbox-label-fasilitas">Kapal</span>
+            <div class="col-md-4">
+                <label class="durasi">Durasi Trip </label>
+                <select class="form-control form-durasi">
+                                <option>1 Hari</option>
+                                <option>2 Hari</option>
+                                <option>3 Hari</option>
+                                <option>4 Hari</option>
+                                <option>5 Hari</option>	
+                              </select>
             </div>
 
-            <div class="col-md-3">
-                <input type="checkbox" class="checkbox">
-                <span class="checkbox-label-fasilitas">Speedboat</span>
+            <div class="col-md-8">
+                <div class="kategori-tittle">
+                    <span class="kategori-tittle-lanjutan">Kategori Lainnya : (Pilih Dua)</span>
+                </div>
+                <div class="wrap-category-item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="checkbox" class="checkbox">
+                            <span class="checkbox-label-fasilitas">Beach</span>
+                        </div>
+
+                        <div class="col-md-6">
+                            <input type="checkbox" class="checkbox">
+                            <span class="checkbox-label-fasilitas">Hiking</span>
+                        </div>
+
+                        <div class="col-md-6">
+                            <input type="checkbox" class="checkbox">
+                            <span class="checkbox-label-fasilitas">City Tour</span>
+                        </div>
+
+                        <div class="col-md-6">
+                            <input type="checkbox" class="checkbox">
+                            <span class="checkbox-label-fasilitas">Honeymoon</span>
+                        </div>
+
+                        <div class="col-md-6">
+                            <input type="checkbox" class="checkbox">
+                            <span class="checkbox-label-fasilitas">Culture</span>
+                        </div>
+
+                        <div class="col-md-6">
+                            <input type="checkbox" class="checkbox">
+                            <span class="checkbox-label-fasilitas">Tracking</span>
+                        </div>
+
+                        <div class="col-md-6">
+                            <input type="checkbox" class="checkbox">
+                            <span class="checkbox-label-fasilitas">Fishing</span>
+                        </div>
+
+                        <div class="col-md-6">
+                            <input type="checkbox" class="checkbox">
+                            <span class="checkbox-label-fasilitas">Sailing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrap-label-fasilitas">
+            <label class="label-form">Fasilitas Trip </label>
+            <span class="glyphicon glyphicon-exclamation-sign"></span>
+            <span class="tittle-fasilitas">Pilih fasilitas apa saja yang termasuk dalam paket wisata yang akan anda jual. Jika tidak ada pada pilihan, anda dapat menulisakn pada kolom deskripsi di halaman berikutnya.</span>
+        </div>
+
+        <div class="wrap-fasilitas">
+            <label class="label-fasilitas">Penginapan</label>
+            <div class="row">
+                <div class="col-md-3">
+                    <input type="checkbox" class="checkbox">
+                    <span class="checkbox-label-fasilitas">Homestay</span>
+                </div>
+
+                <div class="col-md-3">
+                    <input type="checkbox" class="checkbox">
+                    <span class="checkbox-label-fasilitas">Villa</span>
+                </div>
+
+                <div class="col-md-3">
+                    <input type="checkbox" class="checkbox">
+                    <span class="checkbox-label-fasilitas">Hotel</span>
+                </div>
             </div>
 
-            <div class="col-md-3">
-                <input type="checkbox" class="checkbox">
-                <span class="checkbox-label-fasilitas">Minibus</span>
+            <div class="margin-fasilitas"></div>
+            <label class="label-fasilitas">Transportasi</label>
+            <div class="row">
+                <div class="col-md-3">
+                    <input type="checkbox" class="checkbox">
+                    <span class="checkbox-label-fasilitas">Kapal</span>
+                </div>
+
+                <div class="col-md-3">
+                    <input type="checkbox" class="checkbox">
+                    <span class="checkbox-label-fasilitas">Speedboat</span>
+                </div>
+
+                <div class="col-md-3">
+                    <input type="checkbox" class="checkbox">
+                    <span class="checkbox-label-fasilitas">Minibus</span>
+                </div>
+
+                <div class="col-md-3">
+                    <input type="checkbox" class="checkbox">
+                    <span class="checkbox-label-fasilitas">Bus</span>
+                </div>
+
+                <div class="col-md-3">
+                    <input type="checkbox" class="checkbox">
+                    <span class="checkbox-label-fasilitas">Mobil Elf</span>
+                </div>
+
+                <div class="col-md-3">
+                    <input type="checkbox" class="checkbox">
+                    <span class="checkbox-label-fasilitas">Flight</span>
+                </div>
             </div>
 
-            <div class="col-md-3">
-                <input type="checkbox" class="checkbox">
-                <span class="checkbox-label-fasilitas">Bus</span>
-            </div>
+            <div class="margin-fasilitas"></div>
+            <div class="row">
+                <div class="col-md-3">
+                    <input type="checkbox" class="checkbox">
+                    <span class="checkbox-label-fasilitas">Makan</span>
+                </div>
 
-            <div class="col-md-3">
-                <input type="checkbox" class="checkbox">
-                <span class="checkbox-label-fasilitas">Mobil Elf</span>
-            </div>
+                <div class="col-md-3">
+                    <input type="checkbox" class="checkbox">
+                    <span class="checkbox-label-fasilitas">Snack</span>
+                </div>
 
-            <div class="col-md-3">
-                <input type="checkbox" class="checkbox">
-                <span class="checkbox-label-fasilitas">Flight</span>
+                <div class="col-md-3">
+                    <input type="checkbox" class="checkbox">
+                    <span class="checkbox-label-fasilitas">Barbeque</span>
+                </div>
+
+                <div class="col-md-3">
+                    <input type="checkbox" class="checkbox">
+                    <span class="checkbox-label-fasilitas">Souvenir</span>
+                </div>
+
+                <div class="col-md-3">
+                    <input type="checkbox" class="checkbox">
+                    <span class="checkbox-label-fasilitas">Welcome Drink</span>
+                </div>
+
+                <div class="col-md-3">
+                    <input type="checkbox" class="checkbox">
+                    <span class="checkbox-label-fasilitas">Guide</span>
+                </div>
+
+                <div class="col-md-3">
+                    <input type="checkbox" class="checkbox">
+                    <span class="checkbox-label-fasilitas">P3K / Obat-obatan</span>
+                </div>
+
+                <div class="col-md-3">
+                    <input type="checkbox" class="checkbox">
+                    <span class="checkbox-label-fasilitas">Life Jacket</span>
+                </div>
+
+                <div class="col-md-3">
+                    <input type="checkbox" class="checkbox">
+                    <span class="checkbox-label-fasilitas">Karaoke</span>
+                </div>
+
+                <div class="col-md-3">
+                    <input type="checkbox" class="checkbox">
+                    <span class="checkbox-label-fasilitas">Dokumentasi</span>
+                </div>
+
+                <div class="col-md-3">
+                    <input type="checkbox" class="checkbox">
+                    <span class="checkbox-label-fasilitas">Tiket Objek Wisata</span>
+                </div>
             </div>
         </div>
 
-        <div class="margin-fasilitas"></div>
-        <div class="row">
-            <div class="col-md-3">
-                <input type="checkbox" class="checkbox">
-                <span class="checkbox-label-fasilitas">Makan</span>
-            </div>
-
-            <div class="col-md-3">
-                <input type="checkbox" class="checkbox">
-                <span class="checkbox-label-fasilitas">Snack</span>
-            </div>
-
-            <div class="col-md-3">
-                <input type="checkbox" class="checkbox">
-                <span class="checkbox-label-fasilitas">Barbeque</span>
-            </div>
-
-            <div class="col-md-3">
-                <input type="checkbox" class="checkbox">
-                <span class="checkbox-label-fasilitas">Souvenir</span>
-            </div>
-
-            <div class="col-md-3">
-                <input type="checkbox" class="checkbox">
-                <span class="checkbox-label-fasilitas">Welcome Drink</span>
-            </div>
-
-            <div class="col-md-3">
-                <input type="checkbox" class="checkbox">
-                <span class="checkbox-label-fasilitas">Guide</span>
-            </div>
-
-            <div class="col-md-3">
-                <input type="checkbox" class="checkbox">
-                <span class="checkbox-label-fasilitas">P3K / Obat-obatan</span>
-            </div>
-
-            <div class="col-md-3">
-                <input type="checkbox" class="checkbox">
-                <span class="checkbox-label-fasilitas">Life Jacket</span>
-            </div>
-
-            <div class="col-md-3">
-                <input type="checkbox" class="checkbox">
-                <span class="checkbox-label-fasilitas">Karaoke</span>
-            </div>
-
-            <div class="col-md-3">
-                <input type="checkbox" class="checkbox">
-                <span class="checkbox-label-fasilitas">Dokumentasi</span>
-            </div>
-
-            <div class="col-md-3">
-                <input type="checkbox" class="checkbox">
-                <span class="checkbox-label-fasilitas">Tiket Objek Wisata</span>
-            </div>
+        <div class="wrap-btn">
+            <button (click)="toggleJual()" class="btn-content"> Selanjutnya</button>
         </div>
-    </div>
-
-    <div class="wrap-btn">
-        <button (click)="toggleJual()" class="btn-content"> Selanjutnya</button>
     </div>
 </div>
 

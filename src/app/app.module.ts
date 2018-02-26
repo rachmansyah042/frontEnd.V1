@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule, FormControl, } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes, PreloadAllModules } from '@angular/router';
+
  
 import { AppComponent } from './app.component';
 import { LandingpageComponent } from './landingpage/landingpage.component';
@@ -23,11 +24,14 @@ import { EtalaseTravelComponent } from './etalase-travel/etalase-travel.componen
 import { DaftarTravelComponent } from './daftar-travel/daftar-travel.component';
 import { JualTripComponent } from './jual-trip/jual-trip.component';
 import { JualTripContentComponent } from './jual-trip-content/jual-trip-content.component';
+import { JualTripContent2Component } from './jual-trip-content2/jual-trip-content2.component';
 
 import { routes } from './app.route';
 import { AppService } from './app.service';
-import { JualTripContent2Component } from './jual-trip-content2/jual-trip-content2.component';
+import { AppRoutingModule } from './app-routing.module';
 import { AgmCoreModule, MapsAPILoader } from '@agm/core';
+import { SaldoComponent } from './saldo/saldo.component';
+import { DaftarTripComponent } from './daftar-trip/daftar-trip.component';
 
 
 @NgModule({
@@ -52,6 +56,8 @@ import { AgmCoreModule, MapsAPILoader } from '@agm/core';
     JualTripComponent,
     JualTripContentComponent,
     JualTripContent2Component,
+    SaldoComponent,
+    DaftarTripComponent,
 
   ],
   imports: [
@@ -59,6 +65,7 @@ import { AgmCoreModule, MapsAPILoader } from '@agm/core';
     FormsModule,
     ReactiveFormsModule,
     HttpModule,
+    AppRoutingModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyBClUZWzmnXM-51wYSX22_lI2dBouzEDXM',
       libraries: ["places"]

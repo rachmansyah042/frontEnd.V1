@@ -1,0 +1,130 @@
+thead {
+    background-color: #f5f5f5;
+}
+
+th {
+    height: 28px;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    color: #4a4a4a;
+    padding: 10px;
+}
+
+th:nth-child(1) {
+    width: 110px;
+}
+
+th:nth-child(2) {
+    width: 115px;
+}
+
+th:nth-child(3) {
+    width: 115px;
+}
+
+td {
+    font-size: 11px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    color: #4a4a4a;
+}
+
+.wrap-tittle {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.head-tittle {
+    font-size: 35px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    color: #4a4a4a;
+}
+
+.current-saldo {
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    color: #4a4a4a;
+}
+
+.wrap-saldo {
+    padding: 0 30px;
+    width: 100%;
+    height: 94px;
+    line-height: 94px;
+    text-align: right;
+    background-color: #f5f5f5;
+}
+
+.rupiah {
+    font-size: 40px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    color: #4a4a4a;
+}
+
+.saldo-price {
+    font-size: 40px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    color: #ab47bc;
+}
+
+.wrap-search {
+    position: relative;
+    text-align: right;
+    margin-top: 20px;
+    padding: 0 15px;
+}
+
+.petunjuk-pencarian {
+    font-size: 11px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    color: #ab47bc;
+    margin-right: 25px;
+}
+
+.petunjuk-pencarian:hover {
+    text-decoration: none;
+}
+
+.btn-trv-ajukan {
+    width: 180px;
+    height: 40px;
+    border-radius: 3px;
+    border: none;
+    background-color: #58b957;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+.detail-saldo {
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    color: #4a4a4a;
+}

@@ -18,7 +18,7 @@ agm-map {
 
 .state-all {
     position: absolute;
-    bottom: 22px;
+    bottom: 20px;
     right: 0px;
     font-size: 11px;
     font-weight: normal;
@@ -26,6 +26,12 @@ agm-map {
     font-stretch: normal;
     letter-spacing: normal;
     color: #4a4a4a;
+    background-color: #f5f5f5;
+    border-radius: 13.5px;
+    width: 95px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
 }
 
 .state-back a {
@@ -43,6 +49,7 @@ agm-map {
 
 .state-back span {
     margin-left: 12px;
+    margin-right: 14px;
     color: #dddddd;
 }
 
@@ -50,18 +57,16 @@ agm-map {
     text-decoration: none;
 }
 
-.info-term {
+.info-trip-term {
     width: 100%;
-    height: 41px;
-    line-height: 41px;
-    background-color: #f5f5f5;
-    border: solid 1px #dddddd;
-    font-size: 11px;
+    letter-spacing: normal;
+    font-size: 13px;
+    font-weight: normal;
     font-style: normal;
     font-stretch: normal;
-    letter-spacing: normal;
-    color: #ab47bc;
-    text-align: center;
+    text-align: left;
+    color: #4a4a4a;
+    margin-bottom: 15px;
 }
 
 .bold-term {
@@ -89,6 +94,7 @@ agm-map {
     border-radius: 3px;
     background-color: #fdfdfd;
     border: solid 1px #dddddd;
+    resize: none;
 }
 
 .catatan-trip {
@@ -97,6 +103,7 @@ agm-map {
     border-radius: 3px;
     background-color: #fdfdfd;
     border: solid 1px #dddddd;
+    resize: none;
 }
 
 .wrap-catatan {
@@ -162,6 +169,7 @@ agm-map {
     border-radius: 3px;
     background-color: #fdfdfd;
     border: solid 1px #dddddd;
+    resize: none;
 }
 
 .wrap-waktu {

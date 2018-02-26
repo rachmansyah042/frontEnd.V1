@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JualTripContentComponent implements OnInit {
 
-
+successedTrip:boolean = false;
   content1:boolean = true;
   content2:boolean = false;
 
