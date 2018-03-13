@@ -11,6 +11,7 @@ import 'rxjs/add/operator/filter';
 export class JualTripComponent implements OnInit {
 
   order: string;
+  order2: string;
 
   constructor(private routeActive : ActivatedRoute) { }
 

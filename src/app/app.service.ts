@@ -15,6 +15,11 @@ export class AppService {
         .map(res => res.json());
     }
 
+    getDataTrip() {
+        return this.http.get('http://travinesia.com:3000/get/trip')
+        .map(res => res.json());
+    }
+
     addUser(user) {
         return this.http.post('http://travinesia.com:3000/v1/user/authenticate', user)
         .map(res => res.json());

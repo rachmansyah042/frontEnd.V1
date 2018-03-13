@@ -8,52 +8,6 @@
 
     <div class="info-term" *ngIf='successedTrip'><span class="bold-term">Trip berhasil ditambahkan. </span> Silahkan cek pilihan "Daftar Trip" untuk melihat seluruh trip yang anda jual</div>
 
-    <div class="wrap-form-trip">
-        <label class="label-form" for="namaTrip">Nama Trip</label>
-        <div class="input-group">
-            <textarea class="nama-trip form-control" id="namaTrip" placeholder="Contoh : Pulau Harapan Kepulauan Seribu"></textarea>
-        </div>
-
-        <label class="sort" for="lokasi"> Lokasi (Provinsi) </label>
-        <select class="form-control form-sort">
-                                        <option >Pilih Provinsi</option>
-                                        <option >Nanggroe Aceh Darussalam </option>
-                                        <option >Sumatra Utara</option>
-                                        <option >Sumatra Selatan </option>
-                                        <option >Sumatra Barat</option>
-                                        <option >Bengkulu</option>
-                                        <option >Riau</option>
-                                        <option >Kepulauan Riau</option>
-                                        <option >Jambi</option>
-                                        <option >Lampung</option>
-                                        <option >Bangka Belitung</option>
-                                        <option >Kalimantan Barat</option>
-                                        <option >Kalimantan Timur</option>
-                                        <option >Kalimantan Selatan</option>
-                                        <option >Kalimantan Tengah</option>
-                                        <option >Kalimantan Utara</option>
-                                        <option >Banten </option>
-                                        <option >DKI Jakarta  </option>
-                                        <option >Jawa Barat </option>
-                                        <option >Jawa Tengah </option>
-                                        <option >DI Yogyakarta </option>
-                                        <option >Jawa Timur </option>
-                                        <option >Bali </option>
-                                        <option >Nusa Tenggara Timur </option>
-                                        <option >Nusa Tenggara Barat </option>
-                                        <option >Gorontalo </option>
-                                        <option >Sulawesi Barat </option>
-                                        <option >Sulawesi Tengah </option>
-                                        <option >Sulawesi Utara </option>
-                                        <option >Sulawesi Tenggara </option>
-                                        <option >Sulawesi Selatan </option>
-                                        <option >Maluku Utara </option>
-                                        <option >Maluku </option>
-                                        <option >Papua Barat </option>
-                                        <option >Papua  </option>
-                                    </select>
-    </div>
-
     <div class="wrap-img-trip">
         <label class="label-form" for="namaTrip">Gambar Trip</label>
 
@@ -122,6 +76,14 @@
         </div>
     </div>
 
+
+    <div class="wrap-form-trip">
+        <label class="label-form" for="namaTrip">Nama Trip</label>
+        <div class="input-group">
+            <textarea class="form-control nama-trip" id="namaTrip" placeholder="Contoh : Pulau Harapan Kepulauan Seribu"></textarea>
+        </div>
+    </div>
+
     <div class="wrap-option">
         <div class="row">
             <div class="col-md-4">
@@ -130,6 +92,39 @@
                     <label class="radio"><input type="radio" name="radios"><span class="outer"><span class="inner"></span></span>Open</label>
                     <label class="radio"><input type="radio" name="radios"><span class="outer"><span class="inner"></span></span>Private</label>
                 </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label class="label-form">Tanggal Berangkat</label>
+                        <div class="tanggal-trip input-group">
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="icon-calendar"></span></button>
+                            </div>
+                            <input type="date" class=" form-control">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="tittle-tanggal"> <a href="">Tambah Tanggal Berangkat </a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-md-4">
+                <label class="durasi">Durasi Trip </label>
+                <select class="form-control form-durasi">
+                                <option>1 Hari</option>
+                                <option>2 Hari</option>
+                                <option>3 Hari</option>
+                                <option>4 Hari</option>
+                                <option>5 Hari</option>	
+                              </select>
             </div>
 
             <div class="col-md-8">
@@ -153,14 +148,44 @@
 
         <div class="row">
             <div class="col-md-4">
-                <label class="durasi">Durasi Trip </label>
-                <select class="form-control form-durasi">
-                                <option>1 Hari</option>
-                                <option>2 Hari</option>
-                                <option>3 Hari</option>
-                                <option>4 Hari</option>
-                                <option>5 Hari</option>	
-                              </select>
+                <label class="sort" for="lokasi"> Lokasi (Provinsi) </label>
+                <select class="form-control form-sort">
+                                                        <option >Pilih Provinsi</option>
+                                                        <option >Nanggroe Aceh Darussalam </option>
+                                                        <option >Sumatra Utara</option>
+                                                        <option >Sumatra Selatan </option>
+                                                        <option >Sumatra Barat</option>
+                                                        <option >Bengkulu</option>
+                                                        <option >Riau</option>
+                                                        <option >Kepulauan Riau</option>
+                                                        <option >Jambi</option>
+                                                        <option >Lampung</option>
+                                                        <option >Bangka Belitung</option>
+                                                        <option >Kalimantan Barat</option>
+                                                        <option >Kalimantan Timur</option>
+                                                        <option >Kalimantan Selatan</option>
+                                                        <option >Kalimantan Tengah</option>
+                                                        <option >Kalimantan Utara</option>
+                                                        <option >Banten </option>
+                                                        <option >DKI Jakarta  </option>
+                                                        <option >Jawa Barat </option>
+                                                        <option >Jawa Tengah </option>
+                                                        <option >DI Yogyakarta </option>
+                                                        <option >Jawa Timur </option>
+                                                        <option >Bali </option>
+                                                        <option >Nusa Tenggara Timur </option>
+                                                        <option >Nusa Tenggara Barat </option>
+                                                        <option >Gorontalo </option>
+                                                        <option >Sulawesi Barat </option>
+                                                        <option >Sulawesi Tengah </option>
+                                                        <option >Sulawesi Utara </option>
+                                                        <option >Sulawesi Tenggara </option>
+                                                        <option >Sulawesi Selatan </option>
+                                                        <option >Maluku Utara </option>
+                                                        <option >Maluku </option>
+                                                        <option >Papua Barat </option>
+                                                        <option >Papua  </option>
+                                                    </select>
             </div>
 
             <div class="col-md-8">
@@ -212,128 +237,128 @@
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="wrap-label-fasilitas">
-            <label class="label-form">Fasilitas Trip </label>
-            <span class="glyphicon glyphicon-exclamation-sign"></span>
-            <span class="tittle-fasilitas">Pilih fasilitas apa saja yang termasuk dalam paket wisata yang akan anda jual. Jika tidak ada pada pilihan, anda dapat menulisakn pada kolom deskripsi di halaman berikutnya.</span>
-        </div>
+    <div class="wrap-label-fasilitas">
+        <label class="label-form">Fasilitas Trip </label>
+        <span class="glyphicon glyphicon-exclamation-sign"></span>
+        <span class="tittle-fasilitas">Pilih fasilitas apa saja yang termasuk dalam paket wisata yang akan anda jual. Jika tidak ada pada pilihan, anda dapat menulisakn pada kolom deskripsi di halaman berikutnya.</span>
+    </div>
 
-        <div class="wrap-fasilitas">
-            <label class="label-fasilitas">Penginapan</label>
-            <div class="row">
-                <div class="col-md-3">
-                    <input type="checkbox" class="checkbox">
-                    <span class="checkbox-label-fasilitas">Homestay</span>
-                </div>
-
-                <div class="col-md-3">
-                    <input type="checkbox" class="checkbox">
-                    <span class="checkbox-label-fasilitas">Villa</span>
-                </div>
-
-                <div class="col-md-3">
-                    <input type="checkbox" class="checkbox">
-                    <span class="checkbox-label-fasilitas">Hotel</span>
-                </div>
+    <div class="wrap-fasilitas">
+        <label class="label-fasilitas">Penginapan</label>
+        <div class="row">
+            <div class="col-md-3">
+                <input type="checkbox" class="checkbox">
+                <span class="checkbox-label-fasilitas">Homestay</span>
             </div>
 
-            <div class="margin-fasilitas"></div>
-            <label class="label-fasilitas">Transportasi</label>
-            <div class="row">
-                <div class="col-md-3">
-                    <input type="checkbox" class="checkbox">
-                    <span class="checkbox-label-fasilitas">Kapal</span>
-                </div>
-
-                <div class="col-md-3">
-                    <input type="checkbox" class="checkbox">
-                    <span class="checkbox-label-fasilitas">Speedboat</span>
-                </div>
-
-                <div class="col-md-3">
-                    <input type="checkbox" class="checkbox">
-                    <span class="checkbox-label-fasilitas">Minibus</span>
-                </div>
-
-                <div class="col-md-3">
-                    <input type="checkbox" class="checkbox">
-                    <span class="checkbox-label-fasilitas">Bus</span>
-                </div>
-
-                <div class="col-md-3">
-                    <input type="checkbox" class="checkbox">
-                    <span class="checkbox-label-fasilitas">Mobil Elf</span>
-                </div>
-
-                <div class="col-md-3">
-                    <input type="checkbox" class="checkbox">
-                    <span class="checkbox-label-fasilitas">Flight</span>
-                </div>
+            <div class="col-md-3">
+                <input type="checkbox" class="checkbox">
+                <span class="checkbox-label-fasilitas">Villa</span>
             </div>
 
-            <div class="margin-fasilitas"></div>
-            <div class="row">
-                <div class="col-md-3">
-                    <input type="checkbox" class="checkbox">
-                    <span class="checkbox-label-fasilitas">Makan</span>
-                </div>
-
-                <div class="col-md-3">
-                    <input type="checkbox" class="checkbox">
-                    <span class="checkbox-label-fasilitas">Snack</span>
-                </div>
-
-                <div class="col-md-3">
-                    <input type="checkbox" class="checkbox">
-                    <span class="checkbox-label-fasilitas">Barbeque</span>
-                </div>
-
-                <div class="col-md-3">
-                    <input type="checkbox" class="checkbox">
-                    <span class="checkbox-label-fasilitas">Souvenir</span>
-                </div>
-
-                <div class="col-md-3">
-                    <input type="checkbox" class="checkbox">
-                    <span class="checkbox-label-fasilitas">Welcome Drink</span>
-                </div>
-
-                <div class="col-md-3">
-                    <input type="checkbox" class="checkbox">
-                    <span class="checkbox-label-fasilitas">Guide</span>
-                </div>
-
-                <div class="col-md-3">
-                    <input type="checkbox" class="checkbox">
-                    <span class="checkbox-label-fasilitas">P3K / Obat-obatan</span>
-                </div>
-
-                <div class="col-md-3">
-                    <input type="checkbox" class="checkbox">
-                    <span class="checkbox-label-fasilitas">Life Jacket</span>
-                </div>
-
-                <div class="col-md-3">
-                    <input type="checkbox" class="checkbox">
-                    <span class="checkbox-label-fasilitas">Karaoke</span>
-                </div>
-
-                <div class="col-md-3">
-                    <input type="checkbox" class="checkbox">
-                    <span class="checkbox-label-fasilitas">Dokumentasi</span>
-                </div>
-
-                <div class="col-md-3">
-                    <input type="checkbox" class="checkbox">
-                    <span class="checkbox-label-fasilitas">Tiket Objek Wisata</span>
-                </div>
+            <div class="col-md-3">
+                <input type="checkbox" class="checkbox">
+                <span class="checkbox-label-fasilitas">Hotel</span>
             </div>
         </div>
 
-        <div class="wrap-btn">
-            <button (click)="toggleJual()" class="btn-content"> Selanjutnya</button>
+        <div class="margin-fasilitas"></div>
+        <label class="label-fasilitas">Transportasi</label>
+        <div class="row">
+            <div class="col-md-3">
+                <input type="checkbox" class="checkbox">
+                <span class="checkbox-label-fasilitas">Kapal</span>
+            </div>
+
+            <div class="col-md-3">
+                <input type="checkbox" class="checkbox">
+                <span class="checkbox-label-fasilitas">Speedboat</span>
+            </div>
+
+            <div class="col-md-3">
+                <input type="checkbox" class="checkbox">
+                <span class="checkbox-label-fasilitas">Minibus</span>
+            </div>
+
+            <div class="col-md-3">
+                <input type="checkbox" class="checkbox">
+                <span class="checkbox-label-fasilitas">Bus</span>
+            </div>
+
+            <div class="col-md-3">
+                <input type="checkbox" class="checkbox">
+                <span class="checkbox-label-fasilitas">Mobil Elf</span>
+            </div>
+
+            <div class="col-md-3">
+                <input type="checkbox" class="checkbox">
+                <span class="checkbox-label-fasilitas">Flight</span>
+            </div>
         </div>
+
+        <div class="margin-fasilitas"></div>
+        <div class="row">
+            <div class="col-md-3">
+                <input type="checkbox" class="checkbox">
+                <span class="checkbox-label-fasilitas">Makan</span>
+            </div>
+
+            <div class="col-md-3">
+                <input type="checkbox" class="checkbox">
+                <span class="checkbox-label-fasilitas">Snack</span>
+            </div>
+
+            <div class="col-md-3">
+                <input type="checkbox" class="checkbox">
+                <span class="checkbox-label-fasilitas">Barbeque</span>
+            </div>
+
+            <div class="col-md-3">
+                <input type="checkbox" class="checkbox">
+                <span class="checkbox-label-fasilitas">Souvenir</span>
+            </div>
+
+            <div class="col-md-3">
+                <input type="checkbox" class="checkbox">
+                <span class="checkbox-label-fasilitas">Welcome Drink</span>
+            </div>
+
+            <div class="col-md-3">
+                <input type="checkbox" class="checkbox">
+                <span class="checkbox-label-fasilitas">Guide</span>
+            </div>
+
+            <div class="col-md-3">
+                <input type="checkbox" class="checkbox">
+                <span class="checkbox-label-fasilitas">P3K / Obat-obatan</span>
+            </div>
+
+            <div class="col-md-3">
+                <input type="checkbox" class="checkbox">
+                <span class="checkbox-label-fasilitas">Life Jacket</span>
+            </div>
+
+            <div class="col-md-3">
+                <input type="checkbox" class="checkbox">
+                <span class="checkbox-label-fasilitas">Karaoke</span>
+            </div>
+
+            <div class="col-md-3">
+                <input type="checkbox" class="checkbox">
+                <span class="checkbox-label-fasilitas">Dokumentasi</span>
+            </div>
+
+            <div class="col-md-3">
+                <input type="checkbox" class="checkbox">
+                <span class="checkbox-label-fasilitas">Tiket Objek Wisata</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrap-btn">
+        <button (click)="toggleJual()" class="btn-content"> Selanjutnya</button>
     </div>
 </div>
 

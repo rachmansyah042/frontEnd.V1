@@ -238,10 +238,9 @@ li>a:hover {
 .wrap-modal {
     border: 1px solid #dddddd;
     position: fixed;
-    top: 135px;
-    left: 550px;
+    top: 75px;
+    left: 160px;
     z-index: 99;
-    ;
     width: 342px;
     height: 450px;
     border-radius: 3px;

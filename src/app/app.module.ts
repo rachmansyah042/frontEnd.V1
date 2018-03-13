@@ -32,6 +32,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AgmCoreModule, MapsAPILoader } from '@agm/core';
 import { SaldoComponent } from './saldo/saldo.component';
 import { DaftarTripComponent } from './daftar-trip/daftar-trip.component';
+import { UbahProfilTravelComponent } from './ubah-profil-travel/ubah-profil-travel.component';
+import { TransaksiPenjualanComponent } from './transaksi-penjualan/transaksi-penjualan.component';
+import { DaftarPemesanComponent } from './daftar-pemesan/daftar-pemesan.component';
 
 
 @NgModule({
@@ -58,6 +61,9 @@ import { DaftarTripComponent } from './daftar-trip/daftar-trip.component';
     JualTripContent2Component,
     SaldoComponent,
     DaftarTripComponent,
+    UbahProfilTravelComponent,
+    TransaksiPenjualanComponent,
+    DaftarPemesanComponent,
 
   ],
   imports: [

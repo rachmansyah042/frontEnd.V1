@@ -83,7 +83,7 @@
                     <label class="label-checkbox"> Dengan ini saya menyetujui bergabung dengan Travinesia sebagai agen
                             Travel dan bersedia mengikuti segala bentuk kebijakan yang berlaku</label>
 
-                    <button (click)="toggleLogin()" class="btn-daftar-trv"> Lanjutkan </button>
+                    <button data-toggle="modal" data-target="#myModal" class="btn-daftar-trv"> Lanjutkan </button>
                 </div>
             </div>
         </div>
@@ -123,23 +123,29 @@
         </div>
     </div>
 
-    <div *ngIf='showLogin' class="wrap-modal">
-        <a class="exit">
-            <div *ngIf='showLogin' (click)="toggleLogin()" class="close-modal"> X </div>
-        </a>
 
-        <div class="wrap-foto-content">
-            <img class="img-modal" src="../assets/img/user.png">
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="wrap-modal">
+                <a class="exit">
+                    <div data-dismiss="modal" class="close-modal"> X </div>
+                </a>
+
+                <div class="wrap-foto-content">
+                    <img class="img-modal" src="../assets/img/user.png">
+                </div>
+
+                <p class="tittle-foto">Tambahkan Foto</p>
+                <p class="detail-tittle"> dapat berupa logo, kantor atau yang berhubungan </p>
+
+
+                <button class="btn-trv-modal"> Unggah Foto
+                            <label>
+                                <input type="file" hidden>
+                            </label>
+                        </button>
+            </div>
         </div>
-
-        <p class="tittle-foto">Tambahkan Foto</p>
-        <p class="detail-tittle"> dapat berupa logo, kantor atau yang berhubungan </p>
-
-
-        <button class="btn-trv-modal"> Unggah Foto
-            <label>
-                <input type="file" hidden>
-            </label>
-        </button>
     </div>
+
 </div>

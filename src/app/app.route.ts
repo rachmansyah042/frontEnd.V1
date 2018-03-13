@@ -21,6 +21,9 @@ import { JualTripContentComponent} from "./jual-trip-content/jual-trip-content.c
 import { JualTripContent2Component} from "./jual-trip-content2/jual-trip-content2.component";
 import { SaldoComponent} from "./saldo/saldo.component";
 import { DaftarTripComponent} from "./daftar-trip/daftar-trip.component";
+import { UbahProfilTravelComponent} from "./ubah-profil-travel/ubah-profil-travel.component";
+import { TransaksiPenjualanComponent} from "./transaksi-penjualan/transaksi-penjualan.component";
+import { DaftarPemesanComponent} from "./daftar-pemesan/daftar-pemesan.component";
 
 
 export const routes :Routes = [
@@ -32,6 +35,7 @@ export const routes :Routes = [
     {path:'Notifikasi', component:EksternalComponent},
     {path:'JadiTravel', component:DaftarTravelComponent},
     {path:'EtalaseTravel', component:EtalaseTravelComponent},
+
     {path:'Akun', component:TrvSidebarComponent,
 children:[
     {path:'', component:PemesananComponent},
@@ -42,14 +46,16 @@ children:[
     {path:'Promo', component:EksternalComponent}
 ]
 },
+
+
 {path:'JualTrip', component:JualTripComponent,
 children:[
     {path:'', component:JualTripContentComponent},
     {path:'Saldo', component:SaldoComponent},
     {path:'JualTrip', component:JualTripContentComponent},
-    {path:'TransaksiPenjualan', component:EksternalComponent},
-    {path:'UbahProfilTravel', component:EksternalComponent},
-    {path:'DaftarTrip', component:DaftarTripComponent}
+    {path:'TransaksiPenjualan', component:TransaksiPenjualanComponent},
+    {path:'UbahProfilTravel', component:UbahProfilTravelComponent},
+    {path:'DaftarTrip', component:DaftarTripComponent},
 ]
 }
 

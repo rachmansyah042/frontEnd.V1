@@ -1,6 +1,6 @@
-<div class="container-jualTrv">
+<div class="container">
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-3">
             <div class="wrap-sidebar-info">
                 <div class="wrap-info-content">
                     <img src="../assets/img/Award.png" class="badge-travel">
@@ -54,7 +54,7 @@
                     </li>
 
                     <li>
-                        <a [routerLink]="['EtalaseTravel']" [queryParams]="{order:'Etalase Travel'}">
+                        <a href="/#">
                             <span class="sidebar-icon"><i class="glyphicon glyphicon-cog"></i>
                                                       </span>
                             <span class="sidebar-title">Etalase Travel</span>
@@ -72,9 +72,11 @@
             </div>
         </div>
 
-        <div class="col-md-8">
-            <p class="root-sidebar"> Beranda > Travel Saya > {{ order }}</p>
-            <router-outlet></router-outlet>
+        <div class="col-md-9">
+            <div class="wrap-content-padding">
+                <p class="root-sidebar"> Beranda > Travel Saya > {{ order }}</p>
+                <router-outlet></router-outlet>
+            </div>
         </div>
     </div>
 </div>
