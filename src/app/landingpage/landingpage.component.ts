@@ -15,7 +15,7 @@ export class LandingpageComponent implements OnInit {
   
   constructor(private router: Router, private appService: AppService) { 
     this.appService.getDataTrip().subscribe (dataTrip => {
-       console.log(dataTrip.data);
+     
       this.dataTrip = dataTrip.data;
     });
   }

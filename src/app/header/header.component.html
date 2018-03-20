@@ -52,6 +52,11 @@
         <li>
             <a [routerLink]="['/search']" [queryParams]="{order:'Beach'}"> <span class="icon-island-with-palm-trees"></span> Beach</a>
         </li>
+
+        <li *ngFor="let p of product">
+            {{ p.name }}
+        </li>
+
         <li>
             <a [routerLink]="['/search']" [queryParams]="{order:'City Tour'}"> <span class="icon-hotel-with-three-floors"></span> City Tour</a>
         </li>
@@ -91,7 +96,7 @@
 </div>
 
 <div *ngIf='showLogin' class="login-form">
-    <form [formGroup]="rForm" (ngSubmit)="addPost(rForm.value)" (submit)="onSubmit()">
+    <form [formGroup]="rForm" (ngSubmit)="addPost(rForm.value)" (submit)="DoLogin()">
         <div class="trv-form-login">
             <input type="text" class="form-control" placeholder="Email" formControlName="email" autofocus [(ngModel)]="user.email" name="email">
             <div class="trv-alert" *ngIf="!rForm.controls['email'].valid && rForm.controls['email'].touched">{{emailAlertMessage}}</div>

@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { AppService } from '../app.service';
+import { TokenParams } from '../token/token-params.component';
+import { Product } from '../token/product';
+import { AuthService } from '../token/auth.service';
 
 
 @Component({
@@ -39,7 +42,7 @@ export class HeaderComponent implements OnInit {
     this.showLogin = !this.showLogin;
   }
   
-  constructor(private fb: FormBuilder, public appService: AppService) {
+  constructor(private fb: FormBuilder, public appService: AppService, private authService:AuthService) {
 
 
     this.initializeErrorMessage();
@@ -53,7 +56,7 @@ export class HeaderComponent implements OnInit {
 
    onSubmit() {
     this.appService.addUser(this.user).subscribe(user => {
-      console.log(user);
+      // console.log(user);
     })
    }
 
@@ -69,6 +72,36 @@ export class HeaderComponent implements OnInit {
      this.password = post.password;
    }
 
-  ngOnInit() {}
+
+   //token field
+   tokenParams:TokenParams;
+   myToken:string;
+   product:Product[];
+
+   DoLogin():void {
+    this.authService.login(this.email,this.password)
+    .subscribe(
+      data => 
+      {
+        this.tokenParams = data;
+        this.authService.AccessToken = this.tokenParams.token;
+        this.myToken = this.authService.AccessToken;
+        console.log(this.myToken);
+      }
+
+    ); 
+   }
+
+  ngOnInit() {
+    this.myToken = this.authService.AccessToken;
+
+    this.authService.auth()
+      .subscribe (
+        data => 
+        {
+          this.product = data;
+        }
+      )
+  }
 
 }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AppService } from './app.service';
+import { AuthService } from './token/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -9,8 +10,8 @@ import { AppService } from './app.service';
 
 export class AppComponent {
   title = 'Travinesia';
-  changeHead:boolean = false;
-  changeHeadUser:boolean = true;
+  changeHead:boolean = true;
+  changeHeadUser:boolean = false;
 
   constructor(public appService:AppService) {
     console.log(this.appService.getUsers());
