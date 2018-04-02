@@ -20,6 +20,11 @@ export class AppService {
         .map(res => res.json());
     }
 
+    registerUser(newUser) {
+        return this.http.post('http://travinesia.com:3000/v1/user/users', newUser)
+        .map(res => res.json());
+    }
+
     addUser(user) {
         return this.http.post('http://travinesia.com:3000/v1/user/authenticate', user)
         .map(res => res.json());

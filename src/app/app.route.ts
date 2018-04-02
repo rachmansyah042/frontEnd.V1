@@ -24,6 +24,13 @@ import { DaftarTripComponent} from "./daftar-trip/daftar-trip.component";
 import { UbahProfilTravelComponent} from "./ubah-profil-travel/ubah-profil-travel.component";
 import { TransaksiPenjualanComponent} from "./transaksi-penjualan/transaksi-penjualan.component";
 import { DaftarPemesanComponent} from "./daftar-pemesan/daftar-pemesan.component";
+import { DetailPaketComponent } from './detail-paket/detail-paket.component';
+import { UbahProfilComponent } from './ubah-profil/ubah-profil.component';
+import { ProsesPemesananComponent } from './proses-pemesanan/proses-pemesanan.component';
+import { ProsesBayarComponent } from './proses-bayar/proses-bayar.component';
+import { ProsesBayar2Component } from './proses-bayar2/proses-bayar2.component';
+import { RegisterComponent } from './register/register.component';
+import { CalendarComponent } from './calendar/calendar.component';
 
 
 export const routes :Routes = [
@@ -35,11 +42,16 @@ export const routes :Routes = [
     {path:'Notifikasi', component:EksternalComponent},
     {path:'JadiTravel', component:DaftarTravelComponent},
     {path:'EtalaseTravel', component:EtalaseTravelComponent},
-
+    {path:'DetailPaket', component:DetailPaketComponent},
+    {path:'ProsesPemesanan', component:ProsesPemesananComponent},
+    {path:'ProsesBayar', component:ProsesBayarComponent},
+    {path:'ProsesBayar2', component:ProsesBayar2Component},
+    {path:'Daftar', component:RegisterComponent},
+    {path:'Calendar', component:CalendarComponent},
     {path:'Akun', component:TrvSidebarComponent,
 children:[
     {path:'', component:PemesananComponent},
-    {path:'Profil', component:EksternalComponent},
+    {path:'Profil', component:UbahProfilComponent},
     {path:'Pemesanan', component:PemesananComponent},
     {path:'Favorit', component:FavoritUserComponent},
     {path:'Notifikasi', component:EksternalComponent},
