@@ -14,6 +14,9 @@ export class HeaderUserComponent implements OnInit {
   profile:any =[];
   query:any;
 
+  changeHead:boolean = true;
+  changeHeadUser:boolean = false;
+
   querySearch(e) {
     this.query= e.target.value;
     console.log(this.query);
@@ -24,13 +27,21 @@ export class HeaderUserComponent implements OnInit {
 
   constructor(public appService: AppService) {
     this.appService.getUsers().subscribe(profile => {
+
         console.log(profile);
     });
    
    }
 
+   logout() {
+    localStorage.removeItem('token');   
+  }
+
+
   ngOnInit() {
 
+
+    
 
   }
 

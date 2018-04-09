@@ -1,4 +1,5 @@
-import { Routes } from '@angular/router';
+import { Routes, CanActivate } from '@angular/router';
+import { AuthGuardService as AuthGuard } from './token/auth-guard.service';
 import { AppComponent } from './app.component';
 import { LandingpageComponent } from './landingpage/landingpage.component';
 import { HeaderComponent } from './header/header.component';
@@ -27,13 +28,18 @@ import { DaftarPemesanComponent} from "./daftar-pemesan/daftar-pemesan.component
 
 
 export const routes :Routes = [
-    {path:'', component:LandingpageComponent},
-    {path:'Akun', pathMatch: 'full', redirectTo: 'Akun/Profil' },
-    {path:'search', component:TrvSearchResultComponent},
-    {path:'searchNavbar/:query', component:TrvSearchNavbarComponent},
-    {path:'login', component:LoginpageComponent},
+
+    // with login header
+
+    {
+        path :'', 
+        component:HeaderComponent,
+        children: [
+            {path:'', component:LandingpageComponent},
+            {path:'search', component:TrvSearchResultComponent},
+            {path:'searchNavbar/:query', component:TrvSearchNavbarComponent},
     {path:'Notifikasi', component:EksternalComponent},
-    {path:'JadiTravel', component:DaftarTravelComponent},
+    {path:'JadiTravel', component:DaftarTravelComponent,},
     {path:'EtalaseTravel', component:EtalaseTravelComponent},
 
     {path:'Akun', component:TrvSidebarComponent,
@@ -47,7 +53,6 @@ children:[
 ]
 },
 
-
 {path:'JualTrip', component:JualTripComponent,
 children:[
     {path:'', component:JualTripContentComponent},
@@ -58,5 +63,17 @@ children:[
     {path:'DaftarTrip', component:DaftarTripComponent},
 ]
 }
+
+        ]
+    },
+    
+
+    // forget header
+
+    {
+        path:'login', component:LupaKataSandiComponent,
+    },
+
+
 
 ] 

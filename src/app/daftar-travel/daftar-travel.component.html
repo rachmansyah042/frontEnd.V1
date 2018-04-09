@@ -6,26 +6,26 @@
                 <div class="head-daftar">
                     Daftarkan Travel
                 </div>
-                <div class="wrap-form-content">
+                <form class="wrap-form-content" (submit)="onSubmitTravel()">
                     <label class="label-form" for="namaTravel">Nama Travel</label>
                     <div class="input-group">
-                        <input type="text" class="namaTrv form-control" id="namaTravel">
+                        <input type="text" class="namaTrv form-control" id="namaTravel" [(ngModel)]="travel.travel_name" name="travel_name">
                     </div>
 
                     <label class="label-form" for="slogan">Slogan</label>
                     <div class="input-group">
-                        <textarea type="textarea" class="sloganTrv form-control" id="slogan"> </textarea>
+                        <textarea type="textarea" class="sloganTrv form-control" id="slogan" [(ngModel)]="travel.slogan" name="slogan"> </textarea>
                     </div>
 
                     <label class="label-form" for="deskripsi">Deskripsi</label>
                     <div class="input-group">
-                        <textarea type="textarea" class="deskripsiTrv form-control" id="deskripsi"> </textarea>
+                        <textarea type="textarea" class="deskripsiTrv form-control" id="deskripsi" [(ngModel)]="travel.description" name="description"> </textarea>
                     </div>
 
                     <div class="wrap-alamat">
                         <label class="label-form" for="alamat">Alamat Kantor</label>
                         <div class="input-group">
-                            <textarea type="textarea" class="alamatTrv form-control" id="alamat"> </textarea>
+                            <textarea type="textarea" class="alamatTrv form-control" id="alamat" [(ngModel)]="travel.office_address" name="office_address"> </textarea>
                         </div>
 
                         <label class="sort" for="lokasi">Provinsi : </label>
@@ -70,13 +70,13 @@
 
                     <label class="label-form" for="nomorTravel">Nomor Telepon Travel</label>
                     <div class="input-group">
-                        <input type="tel" max="13" class="nomorTrv form-control" id="nomorTravel">
+                        <input type="tel" max="13" class="nomorTrv form-control" id="nomorTravel" [(ngModel)]="travel.office_phone_number" name="office_phone_number">
                     </div>
 
                     <label class="label-form" for="domainTravel">Domain</label>
                     <p class="domain-name">travinesia.com/</p>
                     <div class="input-group wrap-domain">
-                        <input type="text" class="domainTrv form-control" id="domainTravel">
+                        <input type="text" class="domainTrv form-control" id="domainTravel" [(ngModel)]="travel.domain" name="domain">
                     </div>
 
                     <input type="checkbox" class="checkbox">
@@ -84,7 +84,8 @@
                             Travel dan bersedia mengikuti segala bentuk kebijakan yang berlaku</label>
 
                     <button data-toggle="modal" data-target="#myModal" class="btn-daftar-trv"> Lanjutkan </button>
-                </div>
+                    <input data-toggle="modal" type="submit" value="kirim" class="btn-daftar-trv">
+                </form>
             </div>
         </div>
 
@@ -138,12 +139,8 @@
                 <p class="tittle-foto">Tambahkan Foto</p>
                 <p class="detail-tittle"> dapat berupa logo, kantor atau yang berhubungan </p>
 
+                <label class="btn-trv-modal"> <input type="file" hidden (change)="handleFileSelect($event)"> Unggah Foto </label>
 
-                <button class="btn-trv-modal"> Unggah Foto
-                            <label>
-                                <input type="file" hidden>
-                            </label>
-                        </button>
             </div>
         </div>
     </div>

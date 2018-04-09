@@ -28,6 +28,7 @@ import { JualTripContent2Component } from './jual-trip-content2/jual-trip-conten
 
 
 import { AuthService } from './token/auth.service';
+import { AuthGuardService } from './token/auth-guard.service';
 import { routes } from './app.route';
 import { AppService } from './app.service';
 import { AppRoutingModule } from './app-routing.module';
@@ -81,7 +82,7 @@ import { DaftarPemesanComponent } from './daftar-pemesan/daftar-pemesan.componen
     RouterModule.forRoot(routes, { useHash: false, preloadingStrategy: PreloadAllModules }),
     
   ],
-  providers: [AppService, AuthService],
+  providers: [AppService, AuthService, AuthGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

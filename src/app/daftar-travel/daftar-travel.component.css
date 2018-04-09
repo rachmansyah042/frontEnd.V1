@@ -305,6 +305,7 @@ li>a:hover {
 .btn-trv-modal {
     width: 319px;
     height: 45px;
+    line-height: 42px;
     border: 1px solid #dddddd;
     border-radius: 3px;
     background-color: #ab47bc;
@@ -314,4 +315,6 @@ li>a:hover {
     font-stretch: normal;
     letter-spacing: normal;
     color: #ffffff;
+    cursor: pointer;
+    text-align: center;
 }

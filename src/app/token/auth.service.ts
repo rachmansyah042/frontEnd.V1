@@ -8,7 +8,7 @@ import 'rxjs/add/operator/map';
 import { Headers, Http, HttpModule } from '@angular/http';
 import { HttpHeaders } from '@angular/common/http';
 import { TokenParams } from '../token/token-params.component';
-import { Product } from '../token/product';
+import { Product } from '../token/product.component';
 
 @Injectable ()
 export class AuthService {
@@ -40,5 +40,12 @@ export class AuthService {
         })
         .map(res => res.json());
     }
+
+    //guard route service
+
+    // public isAuthenticated() { 
+    //     const token = localStorage.getItem('token');
+    //     return !this.jwtHelper.isTokenExpired(token);
+    // }
 }
 

@@ -16,7 +16,7 @@ export class LupaKataSandiComponent implements OnInit {
   isEdit:boolean = false;
 
   constructor(public appService: AppService) { 
-
+    
   }
 
   onSubmitEmail(isEdit){
