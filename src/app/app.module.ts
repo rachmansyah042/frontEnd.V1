@@ -4,7 +4,7 @@ import { FormsModule, ReactiveFormsModule, FormControl, } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes, PreloadAllModules } from '@angular/router';
 
- 
+
 import { AppComponent } from './app.component';
 import { LandingpageComponent } from './landingpage/landingpage.component';
 import { HeaderComponent } from './header/header.component';
@@ -38,6 +38,13 @@ import { DaftarTripComponent } from './daftar-trip/daftar-trip.component';
 import { UbahProfilTravelComponent } from './ubah-profil-travel/ubah-profil-travel.component';
 import { TransaksiPenjualanComponent } from './transaksi-penjualan/transaksi-penjualan.component';
 import { DaftarPemesanComponent } from './daftar-pemesan/daftar-pemesan.component';
+import { DetailPaketComponent } from './detail-paket/detail-paket.component';
+import { UbahProfilComponent } from './ubah-profil/ubah-profil.component';
+import { ProsesBayarComponent } from './proses-bayar/proses-bayar.component';
+import { ProsesBayar2Component } from './proses-bayar2/proses-bayar2.component';
+import { ProsesPemesananComponent } from './proses-pemesanan/proses-pemesanan.component';
+import { CalendarComponent } from './calendar/calendar.component';
+import { RegisterComponent } from './register/register.component';
 
 
 @NgModule({
@@ -67,6 +74,13 @@ import { DaftarPemesanComponent } from './daftar-pemesan/daftar-pemesan.componen
     UbahProfilTravelComponent,
     TransaksiPenjualanComponent,
     DaftarPemesanComponent,
+    DetailPaketComponent,
+    UbahProfilComponent,
+    ProsesBayarComponent,
+    ProsesBayar2Component,
+    ProsesPemesananComponent,
+    CalendarComponent,
+    RegisterComponent
 
   ],
   imports: [
@@ -80,6 +94,7 @@ import { DaftarPemesanComponent } from './daftar-pemesan/daftar-pemesan.componen
       libraries: ["places"]
     }),
     RouterModule.forRoot(routes, { useHash: false, preloadingStrategy: PreloadAllModules }),
+  
     
   ],
   providers: [AppService, AuthService, AuthGuardService],
